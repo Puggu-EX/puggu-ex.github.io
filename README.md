@@ -1,1 +1,1 @@
-# puggu.github.io
+# puggu
