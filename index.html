@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Portfolio</title>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Current Projects</h1>
-        <section>
-            <p>Pygame</p>
-            <a href="https://github.com/Puggu-EX/PyGame-00">Current Project (in progress)</a>
+        <h1>Isaac Dominguez</h1>
+        
+        <div class="languages">
+        <section class="python">
+
+            <h2>Python</h2><hr>
+
+            <section class="pygame">  
+                <a href="https://github.com/Puggu-EX/PyGame-00"><h3>PyGame</h3></a>
+                <a href="https://github.com/Puggu-EX/PyGame-00" style="color: black">Current Project (in progress)</a>      
+            </section>
+
+            <section class="pyqt5">
+                <h2>PyQt5</h2>
+                <a href="https://github.com/Puggu-EX/PyQT5-00" style="color: black">Current Project (in progress)</a>
+            </section>
+
         </section>
-        <section>
-            <p>PyQt5</p>
+
+        <section class="java">
+            <h2 class="javat">Java</h2><hr>
+            
+            <section class="springboot">  
+                <h3>Spring Boot</h3>
+                <p>Something</p>
+            </section>
+
+            <section class="projects">
+                <h3>Projects</h3>
+                <a href="https://github.com/Puggu-EX/PyQT5-00" style="color: black">Current Project (in progress)</a>
+            </section>
+
         </section>
-        <footer>
-            this is a footer
-        </footer>
+        </div>
+
+        <form method="POST">
+            <fieldset>
+                <input type="text" name="textline" placeholder="Name" autocomplete="username"> <br>
+                <input type="text" name="textline" placeholder="Last name" autocomplete="email"> <br>
+                <label>Buttons</label> <br>
+                <input type="radio" name="button" value="button1">Button 1 <br>
+                <input type="radio" name="button" value="button2">Button 2 <br>
+                <label>Dropdown Menu</label>
+                <select name="dropdown">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select> 
+                <br>
+                <label>Notes</label>
+                <textarea name="notes" cols="80" rows="10" placeholder="Type something in here fool"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Please Press Me :D">
+            </fieldset>
+        </form>
+        <h2>List Items</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+        <dl>
+            <dt>This is a desc. title</dt>
+            <dd>this is the desc. desc.</dd>
+        </dl>
+
+        <a href="https://www.duckduckgo.com"><img src="images/hm.png" class="hm" width="100px" height="100px"></a>
+        <p style="border: 5px ; border-style: solid; border-color: red;">This is a paragraph</p>        
 
     </body>
 </html>

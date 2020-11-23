@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 10;
+    background-color:#232329;
+}
+
+.languages{
+    padding: 5px;
+    margin: 10px;
+
+    border: 3px;
+    border-color: rgb(68, 68, 68);
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: rgb(68, 68, 68);
+}
+
+.python{
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 5px;
+
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: gray;
+}
+
+.pygame{
+    padding: 0;
+    margin: 5px;
+
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: lightgray;
+}
+.pyqt5{
+    padding: 0;
+    margin: 5px;
+
+    border: 3px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: lightgray;
+}
+
+.java{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 10x;
+
+    border: 3px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: gray;
+}
+
+.springboot{
+    padding: 0;
+    margin: 5px;
+
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.projects{
+    padding: 0;
+    margin: 5px;
+
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.hm{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
