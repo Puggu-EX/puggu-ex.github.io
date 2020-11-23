@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 10;
-    background-color:#232329;
+    /*(background-color:#232329;*/
 }
 
 .languages{
@@ -38,6 +38,11 @@ body{
 
     background-color: lightgray;
 }
+
+.pygame-header{
+
+}
+
 .pyqt5{
     padding: 0;
     margin: 5px;
