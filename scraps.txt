@@ -1,8 +1,0 @@
-
-<p> 
-My first language was Java, a <i>very</i> verbose language.
-And even as comfortable as I am writing Java and can appreciate the good sides of its verbose-ness,
-I often find myself wanting to be able to hit the ground running in a matter of minutes.
-From conception to prototype--- like <i>that</i>. So naturally among the sea 
-of canidetes I decided to go with Python. 
-</p>
