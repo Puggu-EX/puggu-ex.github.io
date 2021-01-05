@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="wrapper">
+                <div class="profile-wrapper">
+                    <div id="main-picture">
+                        <img class="picture" src="http://www.placehold.it/150x150" alt="logo" style="border-radius: 3px;">
+                    </div>
+                    
+                    <div id="main-name" class="name">
+                        <h1>Isaac Dominguez</h1>
+                    </div>
+                </div>
+
+                <div class="nav-wrapper">
+                    <nav id="navigation" class="nav-bar" >
+                        <ul class="test">
+                            <li><a id="testing" class="list-item" href="#">Home</a></li>
+                            <li><a class="list-item" href="Projects.html">Projects</a></li>    
+                            <li><a class="list-item" href="Contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-wrapper">
+                    <div id="language-block">
+                        <h2><strong>Langauges</strong></h2>
+                        <div class="language-image-block">
+                            <img src="/images/java.png" alt="Java" width="100" height="100">
+                            <img src="/images/python.png" alt="Java" width="80" height="80">
+                            <img src="/images/rust.png" alt="Java" width="90" height="90">
+                        </div>
+                        <div class="language-image-block">
+                            <img src="/images/big3.png" alt="Java" width="250" height="100">
+                        </div>
+                    </div>
+                    <div id="project-block">
+                        <h2><strong>Projects</strong></h2>  
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div hidden class="numbertext">1 / 4</div>
+                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <div class="caption-block">
+                                    <h3>PyQt5: Log Analyzer</h3>
+                                    <p class="caption-desc">Caption description</p>
+                                </div>
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div hidden class="numbertext">2 / 4</div>
+                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <div class="caption-block">
+                                    <h3>Student Database</h3>
+                                    <p class="caption-desc">Caption description</p>
+                                </div>
+                            </div>
+                        
+                            <div class="mySlides fade">
+                                <div hidden class="numbertext">3 / 4</div>
+                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <div class="caption-block">
+                                    <h3>Spring Boot</h3>
+                                    <p class="caption-desc">Caption description</p>
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div hidden class="numbertext">4 / 4</div>
+                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <div class="caption-block">
+                                    <h3>Portfolio Website</h3>
+                                    <p class="caption-desc">Caption description</p>
+                                </div>
+                              </div>
+                        
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                            <br>
+                            <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                          </div> 
+                        
+                    </div>
+                    <div id="experience-block">
+                        <h2><strong>Experience</strong></h2>
+                    </div>
+                    <div id="education-block">
+                        <h2><strong>Education</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <footer class="footer">
+            &copy; Copyright footer
+        </footer>
+    
+        <script>
+            var slideIndex = 1;
+
+            setInterval(() => {
+                plusSlides(1);
+            }, 10000);
+
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }         
+            
+        </script>
+    </body>
+</html>
