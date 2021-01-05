@@ -1,0 +1,59 @@
+body{
+    margin:  auto;
+    padding: auto;
+    background: #444c66;
+    color: lightgray;
+}
+
+.profile-wrapper{
+    /* width: 235px;
+    height: 230px;
+    position: absolute;
+    left: 45%;
+    top: 1%; */
+
+    text-align: center;
+
+    
+}
+.profile-wrapper .picture{
+    margin-left: 42.5px;
+}
+
+
+.nav-wrapper{
+    
+}
+
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: lightgray;
+    position: absolute;
+    left: 45;
+    top: 26%;
+    border: solid 1px #32304e;
+    
+}
+
+ul.test {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+ul.test li {
+    float: left;
+}
+
+ul.test li a {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
