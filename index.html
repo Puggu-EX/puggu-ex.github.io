@@ -9,7 +9,14 @@
     <body>
         <header id="header">
             <div class="top-bar">
-                    
+                    <div class="socials">
+                        <div class="overlay"></div>
+                        <img class="social-icon" src="http://www.placehold.it/30x30" alt="">
+                        <img class="social-icon" src="http://www.placehold.it/30x30" alt="">
+                        <img class="social-icon" src="http://www.placehold.it/30x30" alt="">
+                        <!-- <img class="social-icon" src="images/twitter.png" alt="" width="30" height="30">
+                        <img class="social-icon" src="images/git.webp" alt="" width="30" height="30"> -->
+                    </div>
             </div>
             <div class="wrapper">
                 <div class="profile-wrapper">
@@ -25,31 +32,54 @@
                 <div class="line"></div>
                 <div class="nav-wrapper">
                     <nav id="navigation" class="nav-bar" >
-                        <ul class="test">
-                            <li><a id="testing" class="list-item" href="#">Home</a></li>
-                            <li><a class="list-item" href="projects.html">Projects</a></li>    
-                            <li><a class="list-item" href="contact.html">Contact</a></li>
+                        <ul class="nav-ul">
+                            <li><a id="nav-home" class="list-item" href="#">Home</a></li>
+                            <li><a id="nav-projects" class="list-item" href="projects.html">Projects</a></li>    
+                            <li><a id="nav-contact" class="list-item" href="contact.html">Contact</a></li>
+                            <li class="blank-list-item">_</li>
                         </ul>
                     </nav>
                 </div>
                 <div class="main-wrapper">
+                    <!-- Language Container -->
                     <div id="language-block">
-                        <h2><strong>Langauges</strong></h2>
-                        <div class="language-image-block">
+                        <h2><strong>< Langauges ></Langauges></strong></h2>
+                        <div class="language-table-block">
+                            <table class="table-lang">
+                                <tr>
+                                    <th><img src="/images/java.png" alt="Java" width="100" height="100"></th>
+                                    <th><img src="/images/python.png" alt="Java" width="80" height="80"></th>
+                                    <th><img src="/images/rust.png" alt="Java" width="90" height="90"></th>
+                                </tr>
+                                <tr>
+                                    <td id="java-table-desc" >
+                                        <dl>
+                                            <dt>NLTK</dt>
+                                            <dd>Used on many projects for a versatility and time saving subroutines</dd>
+                                            <dt>SpringBoot</dt>
+                                        </dl>
+                                    </td>
+                                    <th id="python-table-desc" >Python</th>
+                                    <th id="rust-table-desc" >Rust</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div hidden class="language-image-block">
                             <img src="/images/java.png" alt="Java" width="100" height="100">
                             <img src="/images/python.png" alt="Java" width="80" height="80">
                             <img src="/images/rust.png" alt="Java" width="90" height="90">
                         </div>
-                        <div class="language-image-block">
+                        <div hidden class="language-image-block">
                             <img src="/images/big3.png" alt="Java" width="250" height="100">
                         </div>
                     </div>
+                    <!-- Project Container -->
                     <div id="project-block">
-                        <h2><strong>Projects</strong></h2>  
+                        <h2><strong>< Projects ></Projects></strong></h2>  
                         <div class="slideshow-container">
                             <div class="mySlides fade">
                                 <div hidden class="numbertext">1 / 4</div>
-                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <img src="http://www.placehold.it/1270x503" class="project-images">
                                 <div class="caption-block">
                                     <h3>PyQt5: Log Analyzer</h3>
                                     <p class="caption-desc">Caption description</p>
@@ -58,16 +88,16 @@
                         
                             <div class="mySlides fade">
                                 <div hidden class="numbertext">2 / 4</div>
-                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <img src="http://www.placehold.it/1270x503" class="project-images">
                                 <div class="caption-block">
                                     <h3>Student Database</h3>
                                     <p class="caption-desc">Caption description</p>
                                 </div>
                             </div>
-                        
+                            
                             <div class="mySlides fade">
                                 <div hidden class="numbertext">3 / 4</div>
-                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <img src="http://www.placehold.it/1270x503" class="project-images">
                                 <div class="caption-block">
                                     <h3>Spring Boot</h3>
                                     <p class="caption-desc">Caption description</p>
@@ -76,39 +106,43 @@
 
                             <div class="mySlides fade">
                                 <div hidden class="numbertext">4 / 4</div>
-                                <img src="http://www.placehold.it/150x150" class="project-images">
+                                <img src="http://www.placehold.it/1270x503" class="project-images">
                                 <div class="caption-block">
                                     <h3>Portfolio Website</h3>
                                     <p class="caption-desc">Caption description</p>
                                 </div>
-                              </div>
-                        
+                            </div>
+                            
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                            <br>
-                            <div style="text-align:center">
+                        <br>
+                        <div style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
                             <span class="dot" onclick="currentSlide(4)"></span>
-                          </div> 
+                        </div> 
                         
                     </div>
                     <div id="education-block">
-                        <h2><strong>Education</strong></h2>
+                        <h2><strong>< Education ></Education></strong></h2>
+                        <div class="school-container">
+                            <img src="http://www.placehold.it/150x150" alt="">
+                        </div>
                     </div>
                     <div id="experience-block">
-                        <h2><strong>Experience</strong></h2>
+                        <h2><strong>< Experience ></Experience></strong></h2>
                     </div>
                 </div>
             </div>
+            <div class="blink"></div>
         </header>
 
         <footer class="footer">
             &copy; Copyright footer
         </footer>
-    
+        
         <script>
             var slideIndex = 1;
 
@@ -141,7 +175,6 @@
                 slides[slideIndex-1].style.display = "block";  
                 dots[slideIndex-1].className += " active";
             }         
-            
         </script>
     </body>
 </html>

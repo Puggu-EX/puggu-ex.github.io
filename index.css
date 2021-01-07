@@ -1,10 +1,14 @@
 body{
     margin:  auto;
     padding: auto;
-    background: #444c66;
+    background: #1f2431;
     color: lightgray;
     font-family: arial;
     
+}
+
+header{
+    background-color:  #1f2431;
 }
 
 .top-bar{
@@ -12,20 +16,40 @@ body{
     position: fixed;
     height: 40px;
     width: 100%;
-    border-bottom: 1px dotted gray;
-    background: #444c66;
+    /* border-bottom: 1px dotted gray; */
+    background: #141822;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3),
+     0px 4.5px 2px rgba(0, 0, 0, .1);
+}
+
+.socials{
+    margin: auto;
+    padding: 5px 15% 0 0;
+    text-align: right;
+}
+
+.social-icon{
+    border-radius: 5px;
+}
+
+.social-icon:hover{
+    cursor: pointer;
+    filter: brightness(60%);
 }
 
 .wrapper{
     margin: auto;
-    margin-left: 230px;
-    margin-right: 230px;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
     border-left: dotted 1px gray;
     border-right: dotted 1px gray;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
+
+
 
 /* .profile-wrapper{
     width: 235px;
@@ -45,13 +69,18 @@ body{
     margin: auto;
     padding: auto;
 
+    border-radius: 5px;
+
 }
 
 .profile-wrapper .name{
     text-align: left;
 }
 
-
+.line{
+    border-top: 1px dotted gray;
+    margin-bottom: 30px;
+}
 
 /* ========================================================= */
 .nav-wrapper{
@@ -63,12 +92,20 @@ body{
     width: 100%;
     height: 50px;
     display: flex;
-    background-color: lightgray;
+    background-color: #201f1f;
     /* position: absolute;
     top: 26%; */
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-ul.test {
+/* .nav-bar #nav-home{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+} */
+
+ul.nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -77,20 +114,29 @@ ul.test {
     
 }
 
-ul.test li {
+ul.nav-ul li {
     float: left;
-    border-right: solid 3px #444c66;
-    border-top: solid 3px #444c66;
-    border-bottom: solid 3px rgb(68, 76, 102);
+    /* border-right: solid 3px #1f2431;
+    border-top: solid 3px #1f2431;
+    border-bottom: solid 3px rgb(68, 76, 102); */
 }
 
-ul.test li a{
+ul.nav-ul li a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+ul.nav-ul li a{
 
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px 14px;
+    padding: 14px 16px 18px;
     text-decoration: none;    
+}
+.blank-list-item{
+    color: #1f2431;
+    background-color:#1f2431;
+    padding-bottom: 32px;
 }
 
 .main-wrapper{
@@ -102,10 +148,49 @@ ul.test li a{
     min-width: 600px;
 }
 
-.main-wrapper .language-image-block{
+.language-table-block{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background: #201f1f;
+    border-radius: 5px;
+}
+
+table.table-lang{
+    /* display: inline-block;
+    text-align: center; */
+    width: auto;
+    height: auto;
+}
+
+table.table-lang, tr{
     margin: auto;
     padding: auto;
-    background: lightgray;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+table.table-lang, tr, th{
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    width: 300px;
+    height: auto;
+    border: 3px solid red;
+    border-collapse: collapse;
+    color: white;
+    
+}
+table.table-lang, tr, td{
+    width: 300px;
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+}
+
+.main-wrapper .language-image-block{
+    margin: auto;
+    background: #201f1f;
 }
 
 /* /////////////////////Slideshow//////////////////////////// */
@@ -125,6 +210,7 @@ ul.test li a{
 .project-images{
     width: 100%;
     height: 500px;
+    border-radius: 5px 10px 10px 5px;
 }
 
 /* Next & previous buttons */
@@ -137,7 +223,6 @@ ul.test li a{
     margin-top: 0px;
     padding: 16px;
     padding-top: 200px;
-    color: lightgray;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -149,29 +234,38 @@ ul.test li a{
 .next {
     right: 0;
     border-radius: 90px 0 0 90px;
+    color: lightgray;
 }
 .prev {
     left: 0;
     border-radius: 0px 90px 90px 0px;
+    color: black;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.5);
+.next:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+    color: black;
+}
+.prev:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lightgray;
 }
 
 /* Caption text */
 .caption-block {
     padding-top: 0px;
     font-style: bold;
-    color: white;
+    color: lightgray;
     font-size: 15px;
     position: absolute;
     top: 0px;
     right: 0px;
     width: 60%;
     height: 500px;
-    background: gray;
+    background: #201f1f;
+    border-radius: 0px 5px 5px 0px;
+
 }
 
 .caption-desc{
@@ -231,7 +325,21 @@ ul.test li a{
 
 /* /////////////////////Slideshow//////////////////////////// */
 
+/* [[[[[[[[[[[[[[[[[[[[[ School Container ]]]]]]]]]]]]]]]]]]]]]] */
+
+.school-container{
+    margin: auto;
+    background-color: #201f1f;
+    position: relative;
+    width: 1270px;
+    height: 503px;
+}
+
+.blink{
+    border-top: 1px dotted gray;
+}
+
 .footer{
     position: relative;
-    text-align: center;
+    text-align: right;
 }
