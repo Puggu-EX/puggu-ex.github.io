@@ -79,6 +79,8 @@ header{
     text-align: left;
 }
 
+/* ========================================================= */
+
 .line{
     border-top: 1px dotted gray;
     margin-bottom: 30px;
@@ -135,21 +137,39 @@ ul.nav-ul li a{
     padding: 14px 16px 18px;
     text-decoration: none;    
 }
+
 .blank-list-item{
     color: #1f2431;
     background-color:#1f2431;
     padding-bottom: 32px;
 }
 
+/* ========================================================= */
+
 .main-wrapper{
     margin: auto;
-    padding: auto;
-    /* position: absolute;
-    top: 35%; */
-    text-align: center;
     min-width: 600px;
+    text-align: center;
 }
 
+/* ========================================================= */
+
+.flex-container {
+    display: flex;
+    background-color: #201f1f;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+  
+.flex-container > div {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* ========================================================= */
 .language-table-block{
     margin: 0px;
     padding: 0px;
@@ -189,6 +209,7 @@ table.table-lang, tr, td{
     padding: 10px 20px 10px 20px;
     text-align: left;
 }
+
 
 .main-wrapper .language-image-block{
     margin: auto;
