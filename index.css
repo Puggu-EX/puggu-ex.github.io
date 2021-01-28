@@ -40,7 +40,7 @@ body{
     background: red;
     height: 100%;
     width: 100% - 250px;
-    min-width: 940px;
+    min-width: 58rem
 }
 
 .section{
@@ -182,7 +182,7 @@ body{
     flex-direction: column;
     width: 50em;
     position: relative;
-    padding: 10em;
+    padding: 10rem;
 }
 
 .one .title-flex-container > *{
@@ -236,7 +236,7 @@ body{
     position: absolute;
     right: 0px;
     bottom: 0px;
-    margin: 10em;
+    margin: 10rem;
     box-shadow: -9px 10px 17px -4px rgba(0,0,0,1);
 }
 
@@ -251,7 +251,7 @@ body{
     background-color: #1c1b1b;
     border: 2px solid #ABA6B2;
     border-radius: 5px;
-    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    font-family: Consolas;
     resize: none;
     color: #2cda9d;
     padding: 10px;
@@ -278,72 +278,176 @@ body{
 }
 
 .two{
-    background-color: #252633;
+    background-color: #141822;
     /* color: #2CDA9D; */
     width: 100%;
+    height: 150rem;
     position: relative;
-    display: block;
+    /* display: block; */
     /* min-height: 100em; */
-}
-
-.two .two-inner{
-    overflow: hidden;
-    padding: 10em;
 }
 
 .two .title{
     font-size: 3pc;
+    margin: 0px;
+    padding: 10rem 0 0 10rem;
+    display: block;
 }
 
-/* .two .projects-flex-container{
+/* .two .two-inner{    
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.two .two-inner .project-container{
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    background-color: rgba(255, 0, 0, 0.24);
     display: flex;
     flex-wrap: wrap;
-    /* background: red;
-    opacity: 100%;
-    align-items: stretch;
     justify-content: center;
-    border-radius: 7px;
+    visibility: hidden;
 }
 
-.two .projects-flex-container > div{
-    padding: 6em 3em;
-    display: block;
-    margin: 0em;
+.two .two-inner .project-container .project{
+    width: 25rem;
+    min-width: 40rem; 
+    height: 30rem;
     background-color: gray;
-    width: 30em;
-    height: 20em;
-    overflow: hidden;
-    text-align: center;
-    border: 2px solid #ABA6B2;
+    border: 1px solid red;
+}
+
+.two .two-inner .project-container2{
     
-}
-
-.two .pyqt5{
-    border-radius: 7px 0 0 0;
-}
-
-.two .pygame{
-    border-radius: 0 7px 0 0;
-}
-
-.two .website{
-    border-radius: 0 0 0 7px;
-}
-
-.two .student-database{
-    border-radius: 0 0 7px 0 ;
 } */
 
-.three{
-    background-color: #191C27;
-    width: 100%;
+.two .project-wrapper{
+    position: relative;
+    margin: 5rem 10rem;
+    font-family: Consolas;
+    color: #2cda9d;
+}
 
+.two .project-wrapper .project-container{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.two .project-wrapper .project-container .project{
+    width: 40rem;
+    height: 20rem;
+    position: absolute;
+    background-color: #1c1b1b;
+    /* border: 2px solid gray; */
+    border-radius: 7px;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+}
+
+.two .project-wrapper .project-container .project-desc{
+    width: 30rem;
+    height: 10rem;
+    position: absolute;
+    left: 27rem;
+    top: 12rem;
+}
+
+.two .project-wrapper .project-container .project-desc > textarea{
+    width: 100%;
+    height: 100%;
+    background-color: #1c1b1b;
+    border: px solid gray;
+    border-radius: 7px;
+    resize: none;
+    color: #2cda9d;
+    font-family: Consolas;
+    padding: 10px;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+}
+
+.two .project-wrapper .project-container .project-points{
+    width: 25rem;
+    /* height: 100%; */
+    position: absolute;
+    background-color: #1c1b1b;
+    /* border: 2px solid gray; */
+    border-radius: 7px;
+    right: 10rem;
+    bottom: 12rem;
+    margin: 1rem 0 1rem 0;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+}
+
+.two .project-wrapper .project-container .project-points > div{
+    margin: 10px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 7px;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+    padding-bottom: 7px;
+    text-underline-offset: 7px;
+}
+
+.two .project-wrapper .project-container .project-links{
+    width: 3.3rem;
+    height: 3.3rem;
+    position: absolute;
+    background-color: #1c1b1b;
+    /* border: 2px solid red; */
+    border-radius: 7px;
+    right: 11rem;
+    bottom: 11.5rem;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+
+}
+
+.two .project-wrapper .project-container .project-links .link-title{
+    margin: 10px;
+    /* text-align: center; */
+    font-size: 1rem;
+    border-radius: 7px;
+    box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75);
+    padding-bottom: 7px;
+    text-underline-offset: 7px;
+    visibility: hidden;
+}
+
+.two .project-wrapper .project-container .project-links .gitlogo{
+    width: 40px;
+    height: 40px;
+    background-color: #ABA6B2;
+    mask-size: 40px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url(img/github.svg);
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+}
+.two .project-wrapper .project-container .project-links .gitlogo:hover{
+    animation: 1s steps(1, start) infinite hvr;
+    background-color: #2cda9d;
+}
+
+.two .project-wrapper .project-container .project-links .link-text{
+    position: absolute;
+    font-size: 1.1rem;
+    left: 3rem;
+    bottom: 1.1rem;
+    visibility: hidden;
+}
+
+.three{
+    background-color: #141822;
+    width: 100%;
 }
 
 .four{
-    background-color: #252633;
+    background-color: #141822;
     width: 100%;
-
 }
 
 @keyframes fromTop {
