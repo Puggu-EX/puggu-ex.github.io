@@ -5,18 +5,19 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <script src="index.js"></script>
         <header>
             <div class="main">
-                <!-- sidebar HIDDEN -->
-                <section class="sidebar-wrapper">
+                <!-- sidebar -->
+                <section id="sidebar" class="sidebar-wrapper">
                     <div class="sections">
-                        <img class="git-icon" src="img/Spaceship-01-512.png" alt="socials">
-                        <img class="icon" src="img/Home-512.png" alt="Home">
-                        <img class="icon" src="img/Folder-512.png" alt="Folder">
-                        <img class="icon" src="img/User-Login-512.png" alt="Person">
-                        <img class="icon" src="img/Node-512.png" alt="Socials">
+                        <div class="section-element">test</div>
+                        <div class="section-element">test</div>
+                        <div class="section-element">test</div>
+                        <div class="section-element">test</div>
                     </div>
                 </section>
+                <section></section>
                 <!-- main -->
                 <section class="main-wrapper">
                     <!-- first section -->
@@ -59,7 +60,7 @@
                             </textarea>
                         </div>
                         <div class="textbox fade-top-d2s">
-                            <textarea type="text" spellcheck="false" placeholder="Why would you empty me T^T">print('Hello World!')&#10;
+                            <textarea type="text" spellcheck="false" placeholder="Empty T^T">print('Hello World!')&#10;
                                 &#10;System.out.println("Hello World!");&#10;
                                 &#10;Console.Write("Hello World!");&#10;
                                 &#10;console.log("Hello World!");&#10;
@@ -70,16 +71,30 @@
                     <!-- second section -->
                     <section class="section two">
                         <div class="title">Projects</div>
-                        <div class="two-inner">
-                            <div class="project-container">
-                                <div class="project pyqt5"></div>
-                                <div class="project pygame"></div>
-                                <div class="project log analyzer"></div>
-                                <div class="project website"></div>
-                            </div>
-                        </div>
                         <section class="project-wrapper">
-                            <div class="project-container">
+                            <div id="project1" class="project-container">
+                                <div class="project"></div>
+                                <div class="project-desc">
+                                    <textarea type="text" spellcheck="false" readonly="true">Project Name: Log Analyzer
+                                        &#10;Description: Log Analyzer. Give the frequency of an 'object' within certain parameters. 
+                                        &#10;ie: Request the number of times an IP address was logged.
+                                    </textarea>
+                                </div>
+                                <div class="project-points">
+                                    <div><u>What I learned</u></div>
+                                    <ul>
+                                        <li>GUI application architecture and structure</li><br>
+                                        <li>PyQt5 Framework</li><br>
+                                        <li>Object Oriented Programing with Python</li><br>
+                                        <li>Basic spliting and parsing of raw data</li><br>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <div class="gitlogo"></div>
+                                </div>
+                            </div>
+                            <div id="project2" class="project-container">
                                 <div class="project"></div>
                                 <div class="project-desc">
                                     <textarea type="text" spellcheck="false" readonly="true">Project Name: PyQt5
@@ -101,7 +116,7 @@
                                     <div class="gitlogo"></div>
                                 </div>
                             </div>
-                            <div class="project-container">
+                            <div id="project3" class="project-container">
                                 <div class="project"></div>
                                 <div class="project-desc">
                                     <textarea type="text" spellcheck="false" readonly="true">Project Name: PyQt5
@@ -123,29 +138,7 @@
                                     <div class="gitlogo"></div>
                                 </div>
                             </div>
-                            <div class="project-container">
-                                <div class="project"></div>
-                                <div class="project-desc">
-                                    <textarea type="text" spellcheck="false" readonly="true">Project Name: PyQt5
-                                        &#10;Description: Log Analyzer. Give the frequency of an 'object' within certain parameters. 
-                                        &#10;ie: Request the number of times an IP address was logged.
-                                    </textarea>
-                                </div>
-                                <div class="project-points">
-                                    <div><u>What I learned</u></div>
-                                    <ul>
-                                        <li>GUI application architecture and structure</li><br>
-                                        <li>PyQt5 Framework</li><br>
-                                        <li>Object Oriented Programing with Python</li><br>
-                                        <li>Basic spliting and parsing of raw data</li><br>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                                <div class="project-links">
-                                    <div class="gitlogo"></div>
-                                </div>
-                            </div>
-                            <div class="project-container">
+                            <div id="project4" class="project-container">
                                 <div class="project"></div>
                                 <div class="project-desc">
                                     <textarea type="text" spellcheck="false" readonly="true">Project Name: PyQt5
