@@ -29,16 +29,15 @@ body{
         /* left: 10%; */
     }
     .main-wrapper .two .project-wrapper .project-container .project-points{
-        bottom: 3rem;
+        bottom: 2rem;
     }
     .main-wrapper .two .project-wrapper .project-container .project-links{
-        bottom: 3rem;
+        bottom: 2rem;
     }
     .main-wrapper .two{
-        height: 230rem;
+        height: 180rem;
     }
 }
-
 
 .sidebar-wrapper{
     margin: 0;
@@ -51,6 +50,7 @@ body{
     min-height: 20rem;
     background-color: transparent;
     /* border: 1px solid red; */
+    visibility: hidden;
 }
 
 .sidebar-wrapper .sections{
@@ -61,6 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .sidebar-wrapper .sections .section-element{
@@ -71,7 +72,7 @@ body{
     /* margin-left: 70px; */
     position: relative;
     background: red;
-    height: 100%;
+    height: auto;
     width: 100% - 250px;
     min-width: 58rem
 }
@@ -113,6 +114,7 @@ body{
     min-height: 55em;
     /* background: #162FA1; */
     background-color: #0d111a ;
+    z-index: 10;
 }
 
 .one .top-name{
@@ -410,7 +412,7 @@ body{
     width: 30rem;
     height: 10rem;
     background-color: #1c1b1b;
-    /* border: 8px solid red; */
+    border: 1px solid gray;
     border-radius: 7px;
     resize: none;
     color: #2cda9d;
@@ -427,7 +429,7 @@ body{
     /* border: 2px solid gray; */
     border-radius: 7px;
     right: 5rem;
-    bottom: 12rem;
+    bottom: 9rem;
     margin: 1rem 0 1rem 0;
     /* box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75); */
 }
@@ -442,6 +444,10 @@ body{
     text-underline-offset: 7px;
 }
 
+.two .project-wrapper .project-container .project-points > ul{
+    padding-right: 5px;
+}
+
 .two .project-wrapper .project-container .project-links{
     width: 3.3rem;
     height: 3.3rem;
@@ -450,7 +456,7 @@ body{
     /* border: 2px solid red; */
     border-radius: 7px;
     right: 6rem;
-    bottom: 11.5rem;
+    bottom: 8rem;
     /* box-shadow: -14px 15px 20px -9px rgba(0,0,0,0.75); */
 
 }
@@ -492,15 +498,17 @@ body{
     visibility: hidden;
 }
 
-.three{
+/* .three{
     background-color: #141822;
     width: 100%;
+    visibility: hidden;
 }
 
 .four{
     background-color: #141822;
     width: 100%;
-}
+    visibility: hidden;
+} */
 
 @keyframes fromTop {
     0% {
