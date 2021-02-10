@@ -1,155 +1,172 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portfolio Website</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="index.js"></script>
-        <header>
-            <div class="main">
-                <!-- sidebar -->
-                <section id="sidebar" class="sidebar-wrapper">
-                    <div class="sections">
-                        <div class="section-element">test</div>
-                        <div class="section-element">test</div>
-                        <div class="section-element">test</div>
-                        <div class="section-element">test</div>
+
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <header>
+        <div class="main">
+            <!-- sidebar -->
+            <section id="sidebar" class="sidebar-wrapper">
+                <nav class="sections">
+                    <ul> 
+                        <li><a href="#one" class="section-element nav-home">
+                            <div class="nav-icon home-icon"></div>
+                        </a></li>
+                        <li><a href="#two" class="section-element nav-projects">
+                            <div class="nav-icon projects-icon"></div>
+                        </a></li>
+                        <li><a href="#"    class="section-element nav-more">
+                            <div class="nav-icon more-icon"></div>
+                        </a></li>
+                        <li><a href="#"    class="section-element nav-about">
+                            <div class="nav-icon about-icon"></div>
+                        </a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- main -->
+            <section class="main-wrapper">
+                <!-- first section -->
+                <section class="section one">
+                    <!-- topbar -->
+                    <div class="top-bar fade-top">
+                        <div class="top-name">
+                            <a href="#"><span class="top-name">Puggu-EX</span></a>
+                        </div>
+                        <div class="top-resume">
+                            <span>Resume</span>
+                        </div>
+                        <div class="top-icons">
+                            <a href="https://github.com/Puggu-EX">
+                                <div class="icon svg-img git"></div>
+                            </a>
+                            <a href="https://twitter.com/Puggu_EX">
+                                <div class="icon svg-img twitter"></div>
+                            </a>
+                            <div class="icon svg-img mail"></div>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="title-flex-container">
+                        <h1 class="title">Isaac Dominguez</h1>
+                        <h2 class="subtitle">Portfolio Website</h2>
+                        <div class="line expand-right"></div>
+                        <h3 class="about-site">A site dedicated to displaying my<br> previous,<br> current, <br>and future
+                            <div class="animate-project" style="width: 86.7px;">
+                                <a href="https://github.com/Puggu-EX?tab=repositories">projects.</a>
+                            </div>
+                        </h3>
+                    </div>
+                    <div hidden aria-readonly="true" class="textbox2">
+                        <textarea type="text" spellcheck="false" placeholder="Why would you empty me T^T">print('Hello World!')&#10;
+                                &#10;System.out.println("Hello World!");&#10;
+                                &#10;Console.Write("Hello World!");&#10;
+                                &#10;console.log("Hello World!");&#10;
+                                &#10;<h1>Hello World!</h1>
+                            </textarea>
+                    </div>
+                    <div class="hello-world-textbox">
+                        <textarea type="text" spellcheck="false" placeholder="Empty T^T">print('Hello World!')&#10;
+                                &#10;System.out.println("Hello World!");&#10;
+                                &#10;Console.Write("Hello World!");&#10;
+                                &#10;console.log("Hello World!");&#10;
+                                &#10;<h1>Hello World!</h1>
+                            </textarea>
                     </div>
                 </section>
-                <section></section>
-                <!-- main -->
-                <section class="main-wrapper">
-                    <!-- first section -->
-                    <section class="section one">
-                        <!-- topbar -->
-                        <div class="top-bar fade-top">
-                            <div class="top-name">
-                                <a href="#"><span class="top-name">Puggu-EX</span></a>
-                            </div>
-                            <div class="top-resume">
-                                <span>Resume</span>
-                            </div>
-                            <div class="top-icons">
-                                <a href="https://github.com/Puggu-EX"><div class="icon svg-img git"></div></a>
-                                <a href="https://twitter.com/Puggu_EX"><div class="icon svg-img twitter"></div></a>
-                                <div class="icon svg-img mail"></div>
-                            </div>
-                        </div>
-                        <!-- title -->
-                        <div class="title-flex-container">
-                            <h1 class="title">Isaac Dominguez</h1>
-                            <h2 class="subtitle">Portfolio Website</h2>
-                            <div class="line expand-right"></div>
-                            <h3 class="about-site">A site dedicated to displaying my<br> previous,<br> current, <br>and future
-                                <div class="animate-project" style="width: 86.7px;"> 
-                                    <a href="https://github.com/Puggu-EX?tab=repositories">projects.</a>
-                                </div>
-                            </h3>
-                        </div>
-                        <div hidden aria-readonly="true" class="textbox2">
-                            <textarea type="text" spellcheck="false" placeholder="Why would you empty me T^T">print('Hello World!')&#10;
-                                &#10;System.out.println("Hello World!");&#10;
-                                &#10;Console.Write("Hello World!");&#10;
-                                &#10;console.log("Hello World!");&#10;
-                                &#10;<h1>Hello World!</h1>
-                            </textarea>
-                        </div>
-                        <div class="hello-world-textbox">
-                            <textarea type="text" spellcheck="false" placeholder="Empty T^T">print('Hello World!')&#10;
-                                &#10;System.out.println("Hello World!");&#10;
-                                &#10;Console.Write("Hello World!");&#10;
-                                &#10;console.log("Hello World!");&#10;
-                                &#10;<h1>Hello World!</h1>
-                            </textarea>
-                        </div>
-                    </section>
-                    <!-- second section -->
-                    <section class="section two">
-                        <div class="title">Projects</div>
-                        <section class="project-wrapper">
-                            <div id="project1" class="project-container">
-                                <div class="project"></div>
-                                <div class="project-desc">
-                                    <textarea type="text" spellcheck="false" readonly="true">Project Name: Student Database
+                <!-- second section -->
+                <section class="section two">
+                    <div class="title">Projects</div>
+                    <section class="project-wrapper">
+                        <div id="project1" class="project-container">
+                            <div class="project"></div>
+                            <div class="project-desc">
+                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Student Database
                                         &#10;Brief: Student form application that sends its information to a webserver and then stored in a database. Information can also be received.
                                         &#10;Used: Python, Javascript, JSON/BSON, MongoDB
                                     </textarea>
-                                </div>
-                                <div class="project-points">
-                                    <div><u>What I learned</u></div>
-                                    <ul>
-                                        <li>Javascript</li>
-                                        <ul>
-                                            <li>Node.JS and the Express framework</li><br>
-                                        </ul>
-                                        <li>JSON & BSON</li>
-                                            <ul>
-                                                <li>Data packing, transfering, upacking, and translation</li><br>
-                                            </ul>
-                                        <li>MongoDb</li>
-                                        <ul>
-                                            <li>Backend logic and storing of data</li><br>
-                                        </ul>
-                                    </ul>
-                                </div>
-                                <div class="project-links">
-                                    <div class="gitlogo"></div>
-                                </div>
                             </div>
-                            <div id="project2" class="project-container">
-                                <div class="project"></div>
-                                <div class="project-desc">
-                                    <textarea type="text" spellcheck="false" readonly="true">Project Name: Discord Bot
+                            <!-- Yes, I am lord farquaad. -->
+                            <div class="project-points">
+                                <div><u>What I learned</u></div>
+                                <ul>
+                                    <li>Javascript</li>
+                                    <ul>
+                                        <li>Node.JS and the Express framework</li><br>
+                                    </ul>
+                                    <li>JSON & BSON</li>
+                                    <ul>
+                                        <li>Data packing, transfering, upacking, and translation</li><br>
+                                    </ul>
+                                    <li>MongoDb</li>
+                                    <ul>
+                                        <li>Backend logic and storing of data</li><br>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <div class="gitlogo"></div>
+                            </div>
+                        </div>
+                        <div id="project2" class="project-container">
+                            <div class="project"></div>
+                            <div class="project-desc">
+                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Discord Bot
                                         &#10;Brief: A discord bot that manages server messages, users, roles, and gives informations on streamers via the Twitch API
                                         &#10;Used: Python, Discord API, Twitch API, JSON
                                     </textarea>
-                                </div>
-                                <div class="project-points">
-                                    <div><u>What I learned</u></div>
-                                    <ul>
-                                        <li>Using multiple APIs in one platform</li><br>
-                                        <li>MVC architecture</li>
-                                        <ul>
-                                            <li>'Beautifying' received data</li><br>
-                                        </ul>
-                                        <li>Python</li>
-                                        <ul>
-                                            <li>Coroutines with Async & Await</li><br>
-                                        </ul>
-                                        <li>Tokens and OAuth sercurity</li>
-                                    </ul>
-                                </div>
-                                <div class="project-links">
-                                    <div class="gitlogo"></div>
-                                </div>
                             </div>
-                            <div id="project3" class="project-container">
-                                <div class="project"></div>
-                                <div class="project-desc">
-                                    <textarea type="text" spellcheck="false" readonly="true">Project Name: Log Analyzer
+                            <div class="project-points">
+                                <div><u>What I learned</u></div>
+                                <ul>
+                                    <li>Using multiple APIs in one platform</li><br>
+                                    <li>MVC architecture</li>
+                                    <ul>
+                                        <li>'Beautifying' received data</li><br>
+                                    </ul>
+                                    <li>Python</li>
+                                    <ul>
+                                        <li>Coroutines with Async & Await</li><br>
+                                    </ul>
+                                    <li>Tokens and OAuth sercurity</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <div class="gitlogo"></div>
+                            </div>
+                        </div>
+                        <div id="project3" class="project-container">
+                            <div class="project"></div>
+                            <div class="project-desc">
+                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Log Analyzer
                                         &#10;Brief: Simple log analyzer that can recognize and return patterns detected in raw text files. ie: Find how many times a IP address is logged.
                                         &#10;Used: Python, PyQt5
                                     </textarea>
-                                </div>
-                                <div class="project-points">
-                                    <div><u>What I learned</u></div>
-                                    <ul>
-                                        <li>GUI application architecture and structure</li><br>
-                                        <li>PyQt5 Framework</li><br>
-                                        <li>Object-Oriented Programming with Python</li><br>
-                                        <li>Basic spliting and parsing of raw data</li><br>
-                                    </ul>
-                                </div>
-                                <div class="project-links">
-                                    <div class="gitlogo"></div>
-                                </div>
                             </div>
-                        </section>
-                    </section>
+                            <div class="project-points">
+                                <div><u>What I learned</u></div>
+                                <ul>
+                                    <li>GUI application architecture and structure</li><br>
+                                    <li>PyQt5 Framework</li><br>
+                                    <li>Object-Oriented Programming with Python</li><br>
+                                    <li>Basic spliting and parsing of raw data</li><br>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <div class="gitlogo"></div>
+                            </div>
+                        </div>
                     </section>
                 </section>
-            </div>
-        </header>
-    </body>
+            </section>
+            </section>
+        </div>
+    </header>
+</body>
+
 </html>
