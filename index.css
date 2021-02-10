@@ -79,14 +79,16 @@ body {
     padding-left: 100px;
     width:  25px;
     height: 25px;
-    background-color: #ABA6B2;
+    background-color: #aba6b2;
     mask-size: 25px;
     mask-repeat: no-repeat;
     mask-position: center;
+    transition: 100ms ease;
 }
 
 .sidebar-wrapper .sections .nav-icon:hover{
-background-color: #2cda9d;
+    background-color: #2cda9d;
+    transform: translateY(-3px);
 }
 
 .sidebar-wrapper .sections .nav-home{
@@ -103,7 +105,7 @@ background-color: #2cda9d;
 }
 
 .sidebar-wrapper .sections .projects-icon{
-    mask-image: url(img/settings.svg);
+    mask-image: url(img/folder.svg);
 }
 
 .sidebar-wrapper .sections .nav-more{
@@ -111,7 +113,11 @@ background-color: #2cda9d;
 }
 
 .sidebar-wrapper .sections .more-icon{
-    mask-image: url(img/folder.svg);
+    mask-image: url(img/server.svg);
+    width:     29px;
+    height:    29px;
+    mask-size: 29px;
+    padding-left: 96px;
 }
 
 .sidebar-wrapper .sections .nav-about{
@@ -120,6 +126,7 @@ background-color: #2cda9d;
 
 .sidebar-wrapper .sections .about-icon{
     mask-image: url(img/information.svg);
+    padding-left: 102px;
 }
 
 .main-wrapper {
