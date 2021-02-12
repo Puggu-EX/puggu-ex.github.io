@@ -35,17 +35,17 @@ body {
         bottom: 2rem;
     }
     .main-wrapper .two {
-        height: 180rem;
+        height: 170rem;
     }
 }
 
 .sidebar-wrapper {
     margin: 0;
     left: 0;
-    bottom: 5%;
+    bottom: 0;
     position: fixed;
-    z-index: 12;
-    height: 20rem;
+    z-index: 11;
+    height: 100%;
     width: 10rem;
     min-height: 20rem;
     background-color: transparent;
@@ -56,7 +56,6 @@ body {
 .sidebar-wrapper .sections {
     margin: 0;
     width: 100%;
-    height: 100%;
     text-decoration: none;
     /* border: 1px solid red; */
 }
@@ -64,23 +63,25 @@ body {
 .sidebar-wrapper .sections ul{
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2rem;
 }
 
 .sidebar-wrapper .sections li a{
     display: block;
     text-decoration: none;
     color: inherit;
-    margin: 1rem 0;
     padding: 1rem 0;
     opacity: 0;
 }
 
 .sidebar-wrapper .sections .nav-icon{
     padding-left: 100px;
-    width:  25px;
-    height: 25px;
+    width:     22px;
+    height:    22px;
+    mask-size: 22px;
     background-color: #aba6b2;
-    mask-size: 25px;
     mask-repeat: no-repeat;
     mask-position: center;
     transition: 100ms ease;
@@ -89,10 +90,11 @@ body {
 .sidebar-wrapper .sections .nav-icon:hover{
     background-color: #2cda9d;
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .sidebar-wrapper .sections .nav-home{
-    animation: 1s 2000ms ease 1 fromLeft forwards;
+    animation: 1s 3.3s ease 1 fromBelow forwards;
 }
 
 .sidebar-wrapper .sections .home-icon{
@@ -101,7 +103,7 @@ body {
 
 
 .sidebar-wrapper .sections .nav-projects{
-    animation: 1s 2100ms ease 1 fromLeft forwards;
+    animation: 1s 3.4s ease 1 fromBelow forwards;
 }
 
 .sidebar-wrapper .sections .projects-icon{
@@ -109,19 +111,19 @@ body {
 }
 
 .sidebar-wrapper .sections .nav-more{
-    animation: 1s 2200ms ease 1 fromLeft forwards;
+    animation: 1s 3.5s ease 1 fromBelow forwards;
 }
 
 .sidebar-wrapper .sections .more-icon{
     mask-image: url(img/server.svg);
-    width:     29px;
-    height:    29px;
-    mask-size: 29px;
+    width:     24px;
+    height:    24px;
+    mask-size: 24px;
     padding-left: 96px;
 }
 
 .sidebar-wrapper .sections .nav-about{
-    animation: 1s 2300ms ease 1 fromLeft forwards;
+    animation: 1s 3.6s ease 1 fromBelow forwards;
 }
 
 .sidebar-wrapper .sections .about-icon{
@@ -184,13 +186,15 @@ body {
     width: 100px;
     font-size: 20px;
     /* background-color: red; */
-    z-index: 100;
     color: #aba6b2;
+    animation: 1s ease 1 fromAbove forwards;
+
+
 }
 
-.one .top-name:hover{
+/* .one .top-name:hover{
     color: #2cda9d;
-}
+} */
 
 .one .top-name:visited {
     color: #aba6b2;
@@ -202,12 +206,14 @@ body {
     font-size: 13px;
     padding: 4px 7px;
     margin: 10px;
-    right: 160px;
+    right: 8rem;
     /* background-color: red; */
     border: 2px solid #ABA6B2;
     color: #ABA6B2;
     border-radius: 10px;
     display: inline-block;
+    animation: 1s ease 1 fromAbove forwards;
+
 }
 
 .one .top-resume:hover {
@@ -219,46 +225,71 @@ body {
 
 .one .top-icons {
     position: absolute;
-    margin: 5px;
-    right: 0px;
+    margin: 10px;
+    right: 0;
     top: 0;
-    padding: 5px 10px;
     /* background-color: red; */
     display: flex;
+    text-decoration: none;
+}
+
+.one .top-icons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.one .top-icons ul li{
+    display: inline-block;
+    margin: 0;
+}
+
+.one .top-icons ul li a{
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0;
+    margin: 0;
 }
 
 .one .top-icons .icon {
-    width: 24px;
-    height: 24px;
-    padding: 2px 5px;
-}
-
-.one .top-icons .svg-img {
     background-color: #ABA6B2;
+    width:     24px;
+    height:    24px;
     mask-size: 24px;
     mask-repeat: no-repeat;
     mask-position: center;
+    transition: 100ms ease;
+    padding: 0 .3rem;
+}
+
+.one .top-icons .icon:hover {
+    background-color: #2cda9d;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.one .top-icons .top-git{
+    animation: 1s 100ms ease 1 fromAbove forwards;
 }
 
 .one .top-icons .git {
-    mask-image: url(img/github.svg);
+    mask-image: url(img/github.svg);  
+}
+
+.one .top-icons .top-twitter {
+    animation: 1s 200ms ease 1 fromAbove forwards;
 }
 
 .one .top-icons .twitter {
     mask-image: url(img/twitter.svg);
 }
 
+.one .top-icons .top-mail {
+    animation: 1s 300ms ease 1 fromAbove forwards;
+}
+
 .one .top-icons .mail {
     mask-image: url(img/envelope.svg);
-}
-
-.one .top-icons .svg-img:hover {
-    background-color: #2cda9d;
-}
-
-.one .top-icons .icon:hover {
-    cursor: pointer;
-    animation: 100ms ease-in 1 hvr forwards;
 }
 
 .one .background-img {
@@ -273,7 +304,7 @@ body {
     position: relative;
     padding: 10rem;
     opacity: 0;
-    animation: 1s .5s ease-in 1 fromTop forwards;
+    animation: 2s .5s ease-out 1 fromAbove forwards;
 }
 
 .one .title-flex-container>* {
@@ -296,6 +327,8 @@ body {
 .one .line {
     border: 1px solid #ABA6B2;
     width: 100%;
+    opacity: 0;
+    animation: 2s 1.5s ease-out 1 expandRight forwards;
 }
 
 .one .about-site {
@@ -329,7 +362,7 @@ body {
     margin: 10rem;
     box-shadow: -9px 10px 17px -4px rgba(0, 0, 0, 1);
     opacity: 0;
-    animation: 1s 1s ease-in 1 fromTop forwards;
+    animation: 2s .7s ease-out 1 fromAbove forwards;
 }
 
 ::selection {
@@ -355,7 +388,7 @@ body {
     /* color: #2CDA9D; */
     width: 100%;
     min-width: 60rem;
-    height: 150rem;
+    height: 110rem;
     position: relative;
     /* display: block; */
     /* min-height: 100em; */
@@ -550,39 +583,16 @@ body {
     visibility: hidden;
 } */
 
-@keyframes fromTop {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    20% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
 
 @keyframes expandRight {
     0% {
         width: 0%;
-    }
-    40% {
-        width: 0%;
+        opacity: .5;
     }
     100% {
         width: 100%;
+        opacity: 1;
     }
-}
-
-.fade-top {
-    animation: 1s ease-in 1 fromTop;
-}
-
-.expand-right {
-    animation: 2.5s ease-out 1 expandRight;
 }
 
 @keyframes hvr {
@@ -613,7 +623,7 @@ body {
     }
 }
 
-@keyframes fromLeft{
+@keyframes fromBelow{
     0%{
         opacity: 0%;
         transform: translateY(40px);
@@ -621,6 +631,21 @@ body {
     50%{
         opacity: 0%;
         transform: translateY(30px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fromAbove{
+    0%{
+        opacity: 0%;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity: 0%;
+        transform: translateY(-30px);
     }
     100%{
         opacity: 100%;
