@@ -1,0 +1,19 @@
+{
+  "name": "isaac-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static developer portfolio site for an intermediate developer and CSU Long Beach CS graduate.",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "csulb",
+    "web"
+  ],
+  "author": "Isaac",
+  "license": "MIT"
+}
+

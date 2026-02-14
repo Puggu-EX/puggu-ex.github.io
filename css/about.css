@@ -1,0 +1,37 @@
+/* About section */
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.col-main p {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.col-main p:last-child {
+  margin-bottom: 0;
+}
+
+.col-main strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stack h3 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 600;
+}

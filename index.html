@@ -1,193 +1,318 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <script src="index.js"></script>
-    <header>
-        <div class="main">
-            <!-- sidebar -->
-            <section id="sidebar" class="sidebar-wrapper">
-                <nav class="sections">
-                    <ul> 
-                        <li><a href="#" class="section-element nav-home">
-                            <div class="nav-icon home-icon"></div>
-                        </a></li>
-                        <li><a href="#two" class="section-element nav-projects">
-                            <div class="nav-icon projects-icon"></div>
-                        </a></li>
-                        <li><a href="#"    class="section-element nav-more">
-                            <div class="nav-icon more-icon"></div>
-                        </a></li>
-                        <li><a href="#"    class="section-element nav-about">
-                            <div class="nav-icon about-icon"></div>
-                        </a></li>
-                    </ul>
-                </nav>
-            </section>
-            <!-- main -->
-            <section class="main-wrapper">
-                <!-- first section -->
-                <section class="section one">
-                    <div class="background"></div>
-                    <!-- topbar -->
-                    <div class="top-bar">
-                        <div class="top-name-block">
-                            <span class="top-name">&lt;&ThinSpace;/&ThinSpace;&gt;</span>
-                        </div>
-                        <div class="top-bar-right">
-                            <div class="top-resume">
-                                <span>Resume</span>
-                            </div>
-                            <nav class="top-icons">
-                                <ul>
-                                    <li>
-                                        <a class="top-git" href="https://github.com/Puggu-EX">
-                                            <div class="icon git"></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="top-twitter" href="https://twitter.com/Puggu_EX">
-                                            <div class="icon twitter"></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="top-mail" href="#">
-                                            <div class="icon mail"></div> 
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- title -->
-                    <div class="title-flex-container">
-                        <h1 class="title">Isaac Dominguez</h1>
-                        <h2 class="subtitle">Portfolio Website</h2>
-                        <div class="line expand-right"></div>
-                        <h3 class="about-site">A site dedicated to displaying my<br> previous,<br> current, <br>and future
-                            <div class="animate-project" style="width: 86.7px;">
-                                <a href="https://github.com/Puggu-EX?tab=repositories">projects.</a>
-                            </div>
-                        </h3>
-                    </div>
-                    <div class="hello-world-textbox">
-                        <textarea type="text" spellcheck="false" placeholder="Empty T^T">print('Hello World!')&#10;
-                            &#10;System.out.println("Hello World!");&#10;
-                            &#10;Console.Write("Hello World!");&#10;
-                            &#10;console.log("Hello World!");&#10;
-                            &#10;<h1>Hello World!</h1>
-                        </textarea>
-                    </div>
-                </section>
-                <!-- second section -->
-                <section class="section two">
-                    <div class="title">Projects</div>
-                    <section class="project-wrapper">
-                        <div id="project1" class="project-container">
-                            <div class="project"></div>
-                            <div class="project-desc">
-                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Student Database
-                                        &#10;Brief: Student form application that sends its information to a webserver and then stored in a database. Information can also be received.
-                                        &#10;Used: Python, Javascript, JSON/BSON, MongoDB
-                                    </textarea>
-                            </div>
-                            <!-- Yes, I am lord farquaad. -->
-                            <div class="project-points">
-                                <div><u>What I learned</u></div>
-                                <ul>
-                                    <li>Javascript</li>
-                                    <ul>
-                                        <li>Node.JS and the Express framework</li><br>
-                                    </ul>
-                                    <li>JSON & BSON</li>
-                                    <ul>
-                                        <li>Data packing, transfering, upacking, and translation</li><br>
-                                    </ul>
-                                    <li>MongoDb</li>
-                                    <ul>
-                                        <li>Backend logic and storing of data</li><br>
-                                    </ul>
-                                </ul>
-                            </div>
-                            <div class="project-links">
-                                <div class="gitlogo"></div>
-                            </div>
-                        </div>
-                        <div id="project2" class="project-container">
-                            <div class="project"></div>
-                            <div class="project-desc">
-                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Discord Bot
-                                        &#10;Brief: A discord bot that manages server messages, users, roles, and gives informations on streamers via the Twitch API
-                                        &#10;Used: Python, Discord API, Twitch API, JSON
-                                    </textarea>
-                            </div>
-                            <div class="project-points">
-                                <div><u>What I learned</u></div>
-                                <ul>
-                                    <li>Using multiple APIs in one platform</li><br>
-                                    <li>MVC architecture</li>
-                                    <ul>
-                                        <li>'Beautifying' received data</li><br>
-                                    </ul>
-                                    <li>Python</li>
-                                    <ul>
-                                        <li>Coroutines with Async & Await</li><br>
-                                    </ul>
-                                    <li>Tokens and OAuth sercurity</li>
-                                </ul>
-                            </div>
-                            <div class="project-links">
-                                <div class="gitlogo"></div>
-                            </div>
-                        </div>
-                        <div id="project3" class="project-container">
-                            <div class="project"></div>
-                            <div class="project-desc">
-                                <textarea type="text" spellcheck="false" readonly="true">Project Name: Log Analyzer
-                                        &#10;Brief: Simple log analyzer that can recognize and return patterns detected in raw text files. ie: Find how many times a IP address is logged.
-                                        &#10;Used: Python, PyQt5
-                                    </textarea>
-                            </div>
-                            <div class="project-points">
-                                <div><u>What I learned</u></div>
-                                <ul>
-                                    <li>GUI application architecture and structure</li><br>
-                                    <li>PyQt5 Framework</li><br>
-                                    <li>Object-Oriented Programming with Python</li><br>
-                                    <li>Basic spliting and parsing of raw data</li><br>
-                                </ul>
-                            </div>
-                            <div class="project-links">
-                                <div class="gitlogo"></div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section class="section three">
-                    <div class="third-title">More Projects</div>
-                    <div class="more-projects-flex">
-                        <div class="mini-project slot1">
-                            this is mini proj
-                        </div>
-                        <div class="mini-project slot2">
-                            this is mini proj
-                        </div>
-                        <div class="mini-project slot3">
-                            this is mini proj
-                        </div>
-                        <div class="mini-project slot4">
-                            this is mini proj
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </div>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Developer portfolio of an intermediate software engineer and CSU Long Beach Computer Science graduate with 3 years of IT experience."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/experience.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo">Isaac</div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"></button>
+      </div>
     </header>
-</body>
 
+    <main class="page">
+      <section class="section section-hero" id="top">
+        <div class="page-inner">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Developer</p>
+              <h1 class="hero-title">
+                Hi, I'm <span class="accent">Isaac</span>!
+              </h1>
+              <p class="lead">
+                CSU Long Beach Computer Science graduate with 3 years of professional IT experience. I like
+                building practical tools, applications, and working in collaborative environments.
+              </p>
+              <p>
+                Always looking to learn something new
+              </p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View projects</a>
+                <a href="#contact" class="btn btn-outline">Get in touch</a>
+              </div>
+            </div>
+            <ul class="hero-facts">
+              <li>
+                <span class="label">Status</span>
+                <span class="value">Looking for work</span>
+              </li>
+              <li>
+                <span class="label">Location</span>
+                <span class="value">Southern California</span>
+              </li>
+              <li>
+                <span class="label">Education and Certifications</span>
+                <span class="value">Cal State Long Beach - B.S. CS</span>
+                <span class="value">Long Beach City College</span>
+                <span class="value">Microsoft Networking Fundamentals</span>
+              </li>
+              <li>
+                <span class="label">Experience</span>
+                <span class="value">3 years | IT Support</span>
+                <span class="value">2 years | Web Development</span>
+              </li>
+              <li>
+                <span class="label">Focus</span>
+                <span class="value">Full‑stack Development</span>
+                <span class="value">IT infrastructure</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="page-inner">
+          <header class="section-header">
+            <h2>About Me</h2>
+          </header>
+          <div class="columns">
+            <div class="col col-main">
+              <p>
+                I'm a developer with a few years of experience in IT support and web development. I'm well acquainted
+                with remote development, managing public facing infrastructure, and troubleshooting 
+                software & hardware related issues remotely and on-site. 
+              </p>
+              <p>
+                I'm just as comfortable working in teams as I am by myself. Above all I think
+                communication between developers and with clients is what makes the job easy.
+              </p>
+              <p>
+                Professional work aside, I'm usually working on side projects: personal websites, minecraft plugins,
+                managing my home server, distro hoping, etc. 
+              </p>
+            </div>
+            <div class="col col-side">
+              <div class="stack">
+                <div>
+                  <h3>Core skills</h3>
+                  <ul class="pill-list">
+                    <li>Web Development</li>
+                    <li>IT Support</li>
+                    <li>Git / GitHub</li>
+                    <li>Linux Server & Desktop</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Also comfortable with</h3>
+                  <ul class="pill-list">
+                    <li>REST APIs</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Linux / Windows</li>
+                    <li>Scripting &amp; automation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-experience">
+        <div class="page-inner">
+          <header class="section-header">
+            <h2>Experience &amp; education</h2>
+            <p>Where I've practiced and applied my skills.</p>
+          </header>
+          <div class="columns columns-split">
+            <article>
+              <h3>IT professional</h3>
+              <p class="meta">3 years · mixed environments</p>
+              <ul class="list">
+                <li>Supported users, systems, and networks across Windows and Linux.</li>
+                <li>Automated recurring operational work to reduce manual steps and errors.</li>
+                <li>Partnered with other teams to troubleshoot and ship stable changes.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>B.S. Computer Science</h3>
+              <p class="meta">California State University, Long Beach</p>
+              <ul class="list">
+                <li>Coursework in algorithms, data structures, and software engineering.</li>
+                <li>Experience with web development, databases, and systems programming.</li>
+                <li>Team projects delivering full‑stack applications from design to deployment.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-projects">
+        <div class="page-inner">
+          <header class="section-header">
+            <h2>Projects</h2>
+            <p>Selected work with links to the source code on GitHub.</p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project">
+              <button
+                class="project-inner"
+                data-project-link="https://github.com/your-username/system-monitor-dashboard"
+              >
+                <div
+                  class="project-image"
+                  style="background-image: url('./assets/system-dashboard.jpg');"
+                  aria-hidden="true"
+                ></div>
+                <div class="project-content">
+                  <h3>System monitor dashboard</h3>
+                  <p>
+                    A dashboard for visualizing CPU, memory, and network metrics across machines, built
+                    to connect my IT background with frontend development.
+                  </p>
+                  <ul class="pill-list small">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                  </ul>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/your-username/system-monitor-dashboard"
+                    class="project-link"
+                    target="_blank"
+                    rel="noreferrer"
+                    onclick="event.stopPropagation();"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </button>
+            </article>
+
+            <article class="project">
+              <button
+                class="project-inner"
+                data-project-link="https://github.com/your-username/it-automation-scripts"
+              >
+                <div
+                  class="project-image"
+                  style="background-image: url('./assets/automation.jpg');"
+                  aria-hidden="true"
+                ></div>
+                <div class="project-content">
+                  <h3>IT automation toolkit</h3>
+                  <p>
+                    A set of scripts and small services that automate routine IT tasks such as user
+                    provisioning, backups, and log collection.
+                  </p>
+                  <ul class="pill-list small">
+                    <li>Python</li>
+                    <li>PowerShell</li>
+                    <li>CLI tools</li>
+                  </ul>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/your-username/it-automation-scripts"
+                    class="project-link"
+                    target="_blank"
+                    rel="noreferrer"
+                    onclick="event.stopPropagation();"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </button>
+            </article>
+
+            <article class="project">
+              <button
+                class="project-inner"
+                data-project-link="https://github.com/your-username/learning-tracker"
+              >
+                <div
+                  class="project-image"
+                  style="background-image: url('./assets/learning-tracker.jpg');"
+                  aria-hidden="true"
+                ></div>
+                <div class="project-content">
+                  <h3>Learning tracker</h3>
+                  <p>
+                    A simple web app to track topics, resources, and progress while learning new
+                    technologies and preparing for interviews.
+                  </p>
+                  <ul class="pill-list small">
+                    <li>JavaScript</li>
+                    <li>LocalStorage</li>
+                    <li>Responsive layout</li>
+                  </ul>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/your-username/learning-tracker"
+                    class="project-link"
+                    target="_blank"
+                    rel="noreferrer"
+                    onclick="event.stopPropagation();"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="page-inner">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>Reach out if you'd like to talk about roles, projects, or ideas.</p>
+          </header>
+          <div class="contact-layout">
+            <p>
+              The easiest way to reach me is by email. I'm happy to share more detail on my work, talk
+              through a problem, or walk you through specific projects in this portfolio.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:youremail@example.com" class="btn btn-primary">Email me</a>
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noreferrer"
+                class="btn btn-outline"
+              >
+                GitHub profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-inner">
+        <p>Thanks for stopping by :] - Isaac</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
+
