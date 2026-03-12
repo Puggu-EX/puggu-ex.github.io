@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portfolio Website</title>
+    <!-- <link href="index.css" rel="stylesheet"/> -->
+    <link href="output.css" rel="stylesheet"/>
+</head>
+
+<body class="bg-sky-50">
+<!-- top bar -->
+<div
+        class="fixed top-10 w-full h-10 flex items-center justify-between px-25"
+>
+    <div class="top-bar-left">
+        <span class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</span>
+    </div>
+    <div class="flex gap-5 justify-center">
+        <div class="hover:cursor-pointer" id="resume-button">
+            <p class="text-2xl font-bold">Resume</p>
+        </div>
+        <div class="top-icons">
+            <a class="top-git" href="https://github.com/Puggu-EX">
+                <div
+                        class="w-10 h-10 mask-[url(/img/github.svg)] bg-amber-200 mask-center"
+                ></div>
+            </a>
+            <a class="top-mail" href="#">
+                <div class="icon mail"></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- sidebar -->
+<div class="fixed left-15 bottom-15 space-y-3">
+    <a class="sidebar-link" href="#main">
+        <div class="nav-icon home-icon">T</div>
+    </a>
+    <a class="sidebar-link" href="#about">
+        <div class="nav-icon projects-icon">A</div>
+    </a>
+    <a class="sidebar-link" href="#projects">
+        <div class="nav-icon more-icon">P</div>
+    </a>
+    <a class="sidebar-link" href="#contact">
+        <div class="nav-icon about-icon">C</div>
+    </a>
+</div>
+
+<!--main-->
+<div class="px-45 [&>*:not(:first-child)]:mb-15  " id="main">
+    <!-- Hero section -->
+    <section class="section flex flex-col w-full min-h-dvh justify-center">
+        <!-- heading -->
+        <div class="flex flex-col items-center">
+            <!-- Picture -->
+            <img
+                    alt=""
+                    class="rounded-full p-1 border-solid border-4 border-gray-700"
+                    id="headshot-photograph"
+                    src="https://placehold.co/300x300"
+            />
+            <h1 class="text-5xl font-bold p-3">Isaac Dominguez</h1>
+            <h2 class="text-3xl font-semibold">
+                Software Developer & IT Specialist
+            </h2>
+            <span class="flex items-center w-full my-5">
+            <span
+                    class="h-0.5 flex-1 bg-linear-to-r from-transparent to-gray-600"
+            ></span>
+            <span
+                    class="h-0.5 flex-1 bg-linear-to-l from-transparent to-gray-600"
+            ></span>
+          </span>
+        </div>
+        <div class="flex w-full mt-5 gap-15 justify-center" id="nav-tabs">
+            <!-- About Button -->
+            <a class="tab" href="#about">
+                <h3 class="mt-1 text-xl font-semibold">About Me</h3>
+                <!-- <p class="mt-2 line-clamp-2 text-pretty">Lorem ipsum dolor sit</p> -->
+            </a>
+            <!-- Projects Button -->
+            <a class="tab" href="#projects">
+                <h3 class="mt-1 text-xl font-semibold">Projects</h3>
+                <!-- <p class="mt-2 line-clamp-2 text-pretty">Lorem ipsum dolor sit</p> -->
+            </a>
+            <!-- Contact Button -->
+            <a class="tab" href="#contact">
+                <h3 class="mt-1 text-xl font-semibold">Contact</h3>
+                <!-- <p class="mt-2 line-clamp-2 text-pretty">Lorem ipsum dolor sit</p> -->
+            </a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="section flex flex-col justify-center bg-white p-15" id="about">
+        <div class="section-title">About Me</div>
+
+        <div class="sub-section grid grid-cols-4 gap-10" id="about-content">
+            <div class="about-description col-span-2">
+                <p>
+                    Hello! My name is Isaac Dominguez, and I am a software developer
+                    and IT specialist with a passion for creating innovative solutions
+                    to complex problems. With a strong background in programming
+                    languages such as Python, Java, and C++, I have experience in
+                    developing applications, managing databases, and providing
+                    technical support.
+                </p>
+                <p>
+                    In addition to my technical skills, I am a dedicated team player
+                    who thrives in collaborative environments. I am always eager to
+                    learn new technologies and stay up-to-date with industry trends.
+                    Whether it's developing software applications or troubleshooting
+                    IT issues, I am committed to delivering high-quality results that
+                    exceed expectations.
+                </p>
+            </div>
+            <div class="about-skills w-fit">
+                <p>Web Development</p>
+                <p>Software Engineering</p>
+                <p>Network Administration</p>
+            </div>
+            <div class="about-experience w-fit">
+                <p>IT Specialist</p>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section bg-white p-15" id="projects">
+        <div class="section-title">Projects</div>
+    </section>
+    <!-- Contact three-->
+    <section class="section bg-white p-15" id="contact">
+        <div class="section-title">Contact</div>
+        <div class="more-projects-flex">
+            <div class="mini-project slot1">this is mini proj</div>
+            <div class="mini-project slot2">this is mini proj</div>
+            <div class="mini-project slot3">this is mini proj</div>
+            <div class="mini-project slot4">this is mini proj</div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
