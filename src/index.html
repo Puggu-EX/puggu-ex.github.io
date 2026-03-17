@@ -16,7 +16,7 @@
       <span class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</span>
     </div>
     <div class="flex gap-5 justify-center">
-      <a class="btn btn-lg btn-accent btn-outline">Resume</a>
+      <a class="btn btn-lg btn-accent btn-outline bg-base-100">Resume</a>
       <div class="top-icons">
         <a class="top-git" href="https://github.com/Puggu-EX">
           <div class="w-10 h-10 mask-[url(/img/github.svg)] mask-center"></div>
@@ -75,26 +75,7 @@
     <!-- About Section -->
     <section class="section grid auto-rows-auto auto-cols-auto p-15" id="about">
       <div class="title col-start-1 row-start-1 section-title">About Me</div>
-      <div class="sub-section col-start-1 row-start-2" id="about-content">
-        <div class="about-description">
-          <p>
-            Hello! My name is Isaac Dominguez, and I am a software developer
-            and IT specialist with a passion for creating innovative solutions
-            to complex problems. With a strong background in programming
-            languages such as Python, Java, and C++, I have experience in
-            developing applications, managing databases, and providing
-            technical support.
-          </p>
-          <p>
-            In addition to my technical skills, I am a dedicated team player
-            who thrives in collaborative environments. I am always eager to
-            learn new technologies and stay up-to-date with industry trends.
-            Whether it's developing software applications or troubleshooting
-            IT issues, I am committed to delivering high-quality results that
-            exceed expectations.
-          </p>
-        </div>
-        <div id="about-photo"></div>
+      <div id="about-content" class="sub-section flex items-center mt-15">
       </div>
     </section>
 
@@ -110,10 +91,6 @@
         <p>IT Specialist</p>
         <p>Web Developer</p>
       </div>
-    </section>
-
-    <!-- Experience section -->
-    <section class="section p-15" id="experience">
     </section>
 
     <!-- Projects section -->
@@ -143,8 +120,8 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
-            <a href="#project-slide-3" class="btn btn-circle">❮</a>
-            <a href="#project-slide-2" class="btn btn-circle">❯</a>
+            <a href="#project-slide-3" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-2" class="btn btn-circle hover:bg-accent">❯</a>
           </div>
         </div>
 
@@ -169,8 +146,8 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
-            <a href="#project-slide-1" class="btn btn-circle">❮</a>
-            <a href="#project-slide-3" class="btn btn-circle">❯</a>
+            <a href="#project-slide-1" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-3" class="btn btn-circle hover:bg-accent">❯</a>
           </div>
         </div>
 
@@ -194,8 +171,8 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
-            <a href="#project-slide-2" class="btn btn-circle">❮</a>
-            <a href="#project-slide-1" class="btn btn-circle">❯</a>
+            <a href="#project-slide-2" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-1" class="btn btn-circle hover:bg-accent">❯</a>
           </div>
         </div>
       </div>
@@ -206,10 +183,16 @@
           <div class="card-body">
             <h3 class="card-title text-xl">Backend & APIs</h3>
             <p>RESTful services, integrations, and data pipelines with robust testing and monitoring.</p>
-            <div class="card-actions justify-start mt-3">
-              <div class="badge badge-outline">Python</div>
-              <div class="badge badge-outline">FastAPI</div>
-              <div class="badge badge-outline">SQL</div>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2">
+                <div class="badge badge-outline">Python</div>
+                <div class="badge badge-outline">FastAPI</div>
+                <div class="badge badge-outline">SQL</div>
+              </div>
+              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content">testing</div>
+              </a>
             </div>
           </div>
         </div>
@@ -218,10 +201,16 @@
           <div class="card-body">
             <h3 class="card-title text-xl">Web & UI</h3>
             <p>Modern, responsive interfaces with a focus on accessibility and clean design.</p>
-            <div class="card-actions justify-start mt-3">
-              <div class="badge badge-outline">TypeScript</div>
-              <div class="badge badge-outline">React</div>
-              <div class="badge badge-outline">Tailwind</div>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2">
+                <div class="badge badge-outline">TypeScript</div>
+                <div class="badge badge-outline">React</div>
+                <div class="badge badge-outline">Tailwind</div>
+              </div>
+              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content"></div>
+              </a>
             </div>
           </div>
         </div>
@@ -230,10 +219,16 @@
           <div class="card-body">
             <h3 class="card-title text-xl">DevOps & Infra</h3>
             <p>Automation, CI/CD pipelines, and cloud infrastructure to keep projects reliable.</p>
-            <div class="card-actions justify-start mt-3">
-              <div class="badge badge-outline">Docker</div>
-              <div class="badge badge-outline">CI/CD</div>
-              <div class="badge badge-outline">Monitoring</div>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2">
+                <div class="badge badge-outline">Docker</div>
+                <div class="badge badge-outline">CI/CD</div>
+                <div class="badge badge-outline">Monitoring</div>
+              </div>
+              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content"></div>
+              </a>
             </div>
           </div>
         </div>
