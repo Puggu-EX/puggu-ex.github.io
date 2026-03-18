@@ -11,25 +11,29 @@
 
 <body>
   <!-- top bar -->
-  <div class="fixed top-10 w-full h-10 flex items-center justify-between px-25 z-100">
-    <div class="top-bar-left">
-      <span class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</span>
-    </div>
-    <div class="flex gap-5 justify-center">
-      <a class="btn btn-lg btn-accent btn-outline bg-base-100">Resume</a>
-      <div class="top-icons">
-        <a class="top-git" href="https://github.com/Puggu-EX">
-          <div class="w-10 h-10 mask-[url(/img/github.svg)] mask-center"></div>
-        </a>
-        <a class="top-mail" href="#">
-          <div class="icon mail"></div>
-        </a>
+  <div id="top-bar" class="fixed top-10 left-0 right-0 z-100 hidden lg:block">
+    <div class="mx-auto h-16 px-8 flex items-center justify-between">
+      <div class="top-bar-left">
+        <a href="#" class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</a>
+      </div>
+      <div class="flex gap-5 justify-center">
+        <!-- Resume -->
+        <a class="btn btn-lg btn-accent btn-outline bg-base-100">Resume</a>
+        <!-- Other links maybe -->
+        <div class="top-icons hidden">
+          <a class="top-git" href="https://github.com/Puggu-EX">
+            <div class="w-10 h-10 mask-[url(/img/github.svg)] mask-center"></div>
+          </a>
+          <a class="top-mail" href="#">
+            <div class="icon mail"></div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- sidebar -->
-  <div class="fixed left-15 bottom-15 space-y-3">
+  <div class="fixed left-15 bottom-15 space-y-3 z-100 hidden lg:block">
     <a class="sidebar-link" href="#main">
       <div class="nav-icon home-icon">T</div>
     </a>
@@ -39,13 +43,10 @@
     <a class="sidebar-link" href="#projects">
       <div class="nav-icon more-icon">P</div>
     </a>
-    <a class="sidebar-link" href="#skills">
-      <div class="nav-icon about-icon">C</div>
-    </a>
   </div>
 
   <!--main-->
-  <div class="px-45 [&>*:not(:first-child)]:mb-15" id="main">
+  <div class="lg:px-45 [&>*:not(:first-child)]:mb-15 sm:px-0" id="main">
     <!-- Hero section -->
     <section class="section flex flex-col w-full min-h-dvh justify-center">
       <!-- heading -->
@@ -73,9 +74,19 @@
     </section>
 
     <!-- About Section -->
-    <section class="section grid auto-rows-auto auto-cols-auto p-15" id="about">
+    <section class="section lg:p-15" id="about">
       <div class="title col-start-1 row-start-1 section-title">About Me</div>
-      <div id="about-content" class="sub-section flex items-center mt-15">
+      <div id="about-content" class="sub-section flex lg:flex-row md:flex-col sm:flex-col items-center mt-15 min-w-min">
+        <div class="about-description max-w-lg">
+          <p class="text-xl">
+            I am a recent Computer Science graduate, software developer, and IT specialist. I specialize
+            in web development and SOHO network magement. I'm always looking for something to learn and apply.
+          </p>
+        </div>
+        <div id="about-photo"
+          class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center m-10">
+          <img src="https://placehold.co/200x200" alt="">
+        </div>
       </div>
     </section>
 
@@ -155,8 +166,7 @@
           <div class="w-full flex flex-col md:flex-row items-center gap-8 p-8 px-25 bg-base-200">
             <div class="flex-1">
               <h3 class="text-2xl font-semibold mb-2">Project Three</h3>
-              <p class="mb-4">
-                A third showcase project. Emphasize complexity, scale, or unique challenges you solved.
+              <p class="mb-4"> A third showcase project. Emphasize complexity, scale, or unique challenges you solved.
               </p>
               <div class="flex gap-3">
                 <span class="badge badge-outline">Node.js</span>
@@ -184,7 +194,7 @@
             <h3 class="card-title text-xl">Backend & APIs</h3>
             <p>RESTful services, integrations, and data pipelines with robust testing and monitoring.</p>
             <div class="card-actions justify-between items-center mt-3">
-              <div class="flex gap-2">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
                 <div class="badge badge-outline">Python</div>
                 <div class="badge badge-outline">FastAPI</div>
                 <div class="badge badge-outline">SQL</div>
@@ -202,7 +212,7 @@
             <h3 class="card-title text-xl">Web & UI</h3>
             <p>Modern, responsive interfaces with a focus on accessibility and clean design.</p>
             <div class="card-actions justify-between items-center mt-3">
-              <div class="flex gap-2">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
                 <div class="badge badge-outline">TypeScript</div>
                 <div class="badge badge-outline">React</div>
                 <div class="badge badge-outline">Tailwind</div>
@@ -220,7 +230,7 @@
             <h3 class="card-title text-xl">DevOps & Infra</h3>
             <p>Automation, CI/CD pipelines, and cloud infrastructure to keep projects reliable.</p>
             <div class="card-actions justify-between items-center mt-3">
-              <div class="flex gap-2">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
                 <div class="badge badge-outline">Docker</div>
                 <div class="badge badge-outline">CI/CD</div>
                 <div class="badge badge-outline">Monitoring</div>
