@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Isaac Dominguez</title>
+  <!-- <link href="index.css" rel="stylesheet"/> -->
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- top bar -->
+  <div id="top-bar" class="fixed top-10 left-0 right-0 z-100 hidden lg:block">
+    <div class="mx-auto h-16 px-8 flex items-center justify-between">
+      <div class="top-bar-left">
+        <a href="#" class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</a>
+      </div>
+      <div class="flex gap-5 justify-center">
+        <!-- Resume -->
+        <a class="btn btn-lg btn-accent btn-outline bg-base-100">Resume</a>
+        <!-- Other links maybe -->
+        <div class="top-icons hidden">
+          <a class="top-git" href="https://github.com/Puggu-EX">
+            <div class="w-10 h-10 mask-[url(/img/github.svg)] mask-center"></div>
+          </a>
+          <a class="top-mail" href="#">
+            <div class="icon mail"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sidebar -->
+  <div class="fixed left-15 bottom-15 space-y-3 z-100 hidden lg:block">
+    <a class="sidebar-link" href="#main">
+      <div class="nav-icon home-icon">A</div>
+    </a>
+    <a class="sidebar-link" href="#skills">
+      <div class="nav-icon projects-icon">S</div>
+    </a>
+    <a class="sidebar-link" href="#about">
+      <div class="nav-icon projects-icon">P</div>
+    </a>
+    <a class="sidebar-link" href="#projects">
+      <div class="nav-icon more-icon">C</div>
+    </a>
+  </div>
+
+  <!--main-->
+  <div class="lg:px-45 [&>*:not(:first-child)]:mb-15 sm:px-0" id="main">
+    <!-- Hero section -->
+    <section class="section flex flex-col w-full min-h-dvh justify-center">
+      <!-- heading -->
+      <div class="flex flex-col items-center">
+        <!-- Picture -->
+        <img alt="" class="rounded-full p-1 border-solid border-4" id="headshot-photograph"
+          src="https://placehold.co/300x300" />
+        <h1 class="text-5xl font-bold p-3">Isaac Dominguez</h1>
+        <h2 class="text-3xl font-semibold">
+          Software Developer & IT Specialist
+        </h2>
+        <span class="flex items-center w-full my-5">
+          <span class="h-0.5 flex-1 bg-linear-to-r from-transparent to-gray-600"></span>
+          <span class="h-0.5 flex-1 bg-linear-to-l from-transparent to-gray-600"></span>
+        </span>
+      </div>
+      <div class="flex w-full mt-5 gap-15 justify-center" id="nav-tabs">
+        <a class="btn btn-lg btn-accent" href="#about">About</a>
+        <a class="btn btn-lg btn-accent" href="#projects">Projects</a>
+        <a class="btn btn-lg btn-accent" href="#skills">Skills</a>
+        <a class="btn btn-lg btn-accent" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section lg:p-15" id="about">
+      <div class="title col-start-1 row-start-1 section-title">About Me</div>
+      <div id="about-content" class="sub-section flex lg:flex-row md:flex-col sm:flex-col items-center mt-15 min-w-min">
+        <div class="about-description max-w-lg">
+          <p class="text-xl">
+            I am a recent Computer Science graduate, software developer, and IT specialist. I specialize
+            in web development and SOHO network magement. I'm always looking for something to learn and apply.
+          </p>
+        </div>
+        <div id="about-photo"
+          class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center m-10">
+          <img src="https://placehold.co/200x200" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-title">Skills & Languages</div>
+      <div class="grid grid-cols-2 grid-rows-8
+         gap-4 max-w-6xl justify-center w-full mx-auto my-20
+        lg:grid-cols-6 lg:grid-rows-2
+        md:grid-cols-4 md:grid-rows-3
+        sm:grid-cols-3 sm:grid-rows-4
+         ">
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/spring.svg)] bg-green-600 "></div>
+        </div>
+        <div class="skill-tile">
+          <!-- <div class="skill-icon mask-[url(/src/img/react.svg)]"></div> -->
+          <img class="hover:grayscale-0" src="/src/img/react.svg" alt="react icon">
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/tailwind.svg)] bg-blue-300"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/mysql.svg)] bg-orange-400"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/linux.svg)] bg-red-500"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/html5.svg)] bg-orange-600 alt=" html5 icon"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/css3.svg)] bg-blue-300"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/javascript.svg)] bg-yellow-500"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/python.svg)] bg-yellow-500"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/java.svg)] bg-red-500"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/cpp.svg)] bg-blue-400"></div>
+        </div>
+        <div class="skill-tile">
+          <div class="skill-icon mask-[url(/src/img/dot_net.svg)] bg-purple-400"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section p-15" id="projects">
+      <div class="section-title">Projects</div>
+
+      <!-- Project carousel -->
+      <div class="carousel w-full mx-auto mt-8 rounded-box">
+        <div id="project-slide-1" class="carousel-item relative w-full">
+          <div class="w-full flex flex-col md:flex-row items-center gap-8 p-8 px-25 bg-base-200">
+            <div class="flex-1">
+              <h3 class="text-2xl font-semibold mb-2">Student Nest</h3>
+              <p class="mb-4">
+                A mock replacement for Cal State Long Beach's "MyCSULB Student Center",
+                built with Spring Boot, React, and MySQL.
+              </p>
+              <div class="flex gap-3">
+                <span class="badge badge-outline">Spring Boot</span>
+                <span class="badge badge-outline">React</span>
+                <span class="badge badge-outline">MySQL</span>
+                <span class="badge badge-outline">Colaberation</span>
+              </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+              <div class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center">
+                <span class="opacity-70">Screenshot / mockup</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
+            <a href="#project-slide-3" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-2" class="btn btn-circle hover:bg-accent">❯</a>
+          </div>
+        </div>
+
+        <div id="project-slide-2" class="carousel-item relative w-full">
+          <div class="w-full flex flex-col md:flex-row items-center gap-8 p-8 px-25 bg-base-200">
+            <div class="flex-1">
+              <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
+              <p class="mb-4">
+                Another key project. Focus on your responsibilities, architecture decisions,
+                and measurable outcomes.
+              </p>
+              <div class="flex gap-3">
+                <span class="badge badge-outline">C#</span>
+                <span class="badge badge-outline">.NET</span>
+                <span class="badge badge-outline">Azure</span>
+              </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+              <div class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center">
+                <span class="opacity-70">Screenshot / mockup</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
+            <a href="#project-slide-1" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-3" class="btn btn-circle hover:bg-accent">❯</a>
+          </div>
+        </div>
+
+        <div id="project-slide-3" class="carousel-item relative w-full">
+          <div class="w-full flex flex-col md:flex-row items-center gap-8 p-8 px-25 bg-base-200">
+            <div class="flex-1">
+              <h3 class="text-2xl font-semibold mb-2">Project Three</h3>
+              <p class="mb-4"> A third showcase project. Emphasize complexity, scale, or unique challenges you solved.
+              </p>
+              <div class="flex gap-3">
+                <span class="badge badge-outline">Node.js</span>
+                <span class="badge badge-outline">Express</span>
+                <span class="badge badge-outline">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+              <div class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center">
+                <span class="opacity-70">Screenshot / mockup</span>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
+            <a href="#project-slide-2" class="btn btn-circle hover:bg-accent">❮</a>
+            <a href="#project-slide-1" class="btn btn-circle hover:bg-accent">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project tiles under carousel -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title text-xl">ISTS Backend</h3>
+            <p>Backend code for ISTS; my ticketing system. Built with Spring Boot.</p>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
+                <div class="badge badge-outline">Spring Boot</div>
+                <div class="badge badge-outline">Java</div>
+                <div class="badge badge-outline">Jakarta</div>
+                <div class="badge badge-outline">Maven</div>
+              </div>
+              <a href="https://github.com/Puggu-EX/ISTS-Backend" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content">testing</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title text-xl">ISTS Client</h3>
+            <p>Modern, responsive interfaces with a focus on accessibility and clean design.</p>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
+                <div class="badge badge-outline">TypeScript</div>
+                <div class="badge badge-outline">React</div>
+                <div class="badge badge-outline">Tailwind</div>
+              </div>
+              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title text-xl">Dominguez Marble</h3>
+            <p>Simple landing page for a small business. Built with plain HTML, CSS, and JavaScript.</p>
+            <div class="card-actions justify-between items-center mt-3">
+              <div class="flex gap-2 md:flex-col sm:flex-col">
+                <div class="badge badge-outline">HTML</div>
+                <div class="badge badge-outline">CSS</div>
+                <div class="badge badge-outline">JavaScript</div>
+              </div>
+              <a href="https://dominguezmarble.work" aria-label="View project on GitHub"
+                class="hover:bg-accent rounded-3xl">
+                <div class="w-8 h-8 mask-[url(/src/img/internet.svg)] mask-center bg-base-content"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section (form)-->
+    <section class="section p-15" id="contact">
+      <div class="section-title">Contact</div>
+    </section>
+  </div>
+</body>
+
+</html>

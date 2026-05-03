@@ -1,19 +1,13 @@
 {
-  "name": "isaac-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Static developer portfolio site for an intermediate developer and CSU Long Beach CS graduate.",
-  "scripts": {
-    "start": "npx serve .",
-    "preview": "npx serve ."
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.10",
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
   },
-  "keywords": [
-    "portfolio",
-    "developer",
-    "csulb",
-    "web"
-  ],
-  "author": "Isaac",
-  "license": "MIT"
+  "devDependencies": {
+    "daisyui": "^5.5.19"
+  },
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/index.css -o ./src/output.css --watch"
+  }
 }
-
