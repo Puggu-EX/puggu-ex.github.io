@@ -35,13 +35,16 @@
   <!-- sidebar -->
   <div class="fixed left-15 bottom-15 space-y-3 z-100 hidden lg:block">
     <a class="sidebar-link" href="#main">
-      <div class="nav-icon home-icon">T</div>
+      <div class="nav-icon home-icon">A</div>
+    </a>
+    <a class="sidebar-link" href="#skills">
+      <div class="nav-icon projects-icon">S</div>
     </a>
     <a class="sidebar-link" href="#about">
-      <div class="nav-icon projects-icon">A</div>
+      <div class="nav-icon projects-icon">P</div>
     </a>
     <a class="sidebar-link" href="#projects">
-      <div class="nav-icon more-icon">P</div>
+      <div class="nav-icon more-icon">C</div>
     </a>
   </div>
 
@@ -64,12 +67,10 @@
         </span>
       </div>
       <div class="flex w-full mt-5 gap-15 justify-center" id="nav-tabs">
-        <!-- About Button -->
         <a class="btn btn-lg btn-accent" href="#about">About</a>
-        <!-- Projects Button -->
         <a class="btn btn-lg btn-accent" href="#projects">Projects</a>
-        <!-- skills Button -->
-        <a class="btn btn-lg btn-accent" href="#skills">Contact</a>
+        <a class="btn btn-lg btn-accent" href="#skills">Skills</a>
+        <a class="btn btn-lg btn-accent" href="#contact">Contact</a>
       </div>
     </section>
 
@@ -93,13 +94,18 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
       <div class="section-title">Skills & Languages</div>
-      <div class="grid grid-cols-2 grid-rows-8 md:grid-cols-4 md:grid-rows-4 lg:grid-cols-8 lg:grid-rows-2 gap-4 max-w-6xl justify-center w-full mx-auto my-20">
+      <div class="grid grid-cols-2 grid-rows-8
+         gap-4 max-w-6xl justify-center w-full mx-auto my-20
+        lg:grid-cols-6 lg:grid-rows-2
+        md:grid-cols-4 md:grid-rows-3
+        sm:grid-cols-3 sm:grid-rows-4
+         ">
         <div class="skill-tile">
           <div class="skill-icon mask-[url(/src/img/spring.svg)] bg-green-600 "></div>
         </div>
         <div class="skill-tile">
           <!-- <div class="skill-icon mask-[url(/src/img/react.svg)]"></div> -->
-           <img class="hover:grayscale-0" src="/src/img/react.svg" alt="react icon">
+          <img class="hover:grayscale-0" src="/src/img/react.svg" alt="react icon">
         </div>
         <div class="skill-tile">
           <div class="skill-icon mask-[url(/src/img/tailwind.svg)] bg-blue-300"></div>
@@ -111,7 +117,7 @@
           <div class="skill-icon mask-[url(/src/img/linux.svg)] bg-red-500"></div>
         </div>
         <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/html5.svg)] bg-orange-600 alt="html5 icon"></div>
+          <div class="skill-icon mask-[url(/src/img/html5.svg)] bg-orange-600 alt=" html5 icon"></div>
         </div>
         <div class="skill-tile">
           <div class="skill-icon mask-[url(/src/img/css3.svg)] bg-blue-300"></div>
@@ -129,19 +135,7 @@
           <div class="skill-icon mask-[url(/src/img/cpp.svg)] bg-blue-400"></div>
         </div>
         <div class="skill-tile">
-          <div class="skill-icon"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon"></div>
+          <div class="skill-icon mask-[url(/src/img/dot_net.svg)] bg-purple-400"></div>
         </div>
       </div>
     </section>
@@ -155,15 +149,16 @@
         <div id="project-slide-1" class="carousel-item relative w-full">
           <div class="w-full flex flex-col md:flex-row items-center gap-8 p-8 px-25 bg-base-200">
             <div class="flex-1">
-              <h3 class="text-2xl font-semibold mb-2">Project One</h3>
+              <h3 class="text-2xl font-semibold mb-2">Student Nest</h3>
               <p class="mb-4">
-                Short description of a featured project. Highlight the problem, your solution,
-                and the main technologies you used.
+                A mock replacement for Cal State Long Beach's "MyCSULB Student Center",
+                built with Spring Boot, React, and MySQL.
               </p>
               <div class="flex gap-3">
-                <span class="badge badge-outline">Python</span>
+                <span class="badge badge-outline">Spring Boot</span>
                 <span class="badge badge-outline">React</span>
-                <span class="badge badge-outline">Tailwind</span>
+                <span class="badge badge-outline">MySQL</span>
+                <span class="badge badge-outline">Colaberation</span>
               </div>
             </div>
             <div class="flex-1 flex justify-center">
@@ -233,15 +228,16 @@
       <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
-            <h3 class="card-title text-xl">Backend & APIs</h3>
-            <p>RESTful services, integrations, and data pipelines with robust testing and monitoring.</p>
+            <h3 class="card-title text-xl">ISTS Backend</h3>
+            <p>Backend code for ISTS; my ticketing system. Built with Spring Boot.</p>
             <div class="card-actions justify-between items-center mt-3">
               <div class="flex gap-2 md:flex-col sm:flex-col">
-                <div class="badge badge-outline">Python</div>
-                <div class="badge badge-outline">FastAPI</div>
-                <div class="badge badge-outline">SQL</div>
+                <div class="badge badge-outline">Spring Boot</div>
+                <div class="badge badge-outline">Java</div>
+                <div class="badge badge-outline">Jakarta</div>
+                <div class="badge badge-outline">Maven</div>
               </div>
-              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+              <a href="https://github.com/Puggu-EX/ISTS-Backend" aria-label="View project on GitHub"
                 class="hover:bg-accent rounded-3xl">
                 <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content">testing</div>
               </a>
@@ -251,7 +247,7 @@
 
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
-            <h3 class="card-title text-xl">Web & UI</h3>
+            <h3 class="card-title text-xl">ISTS Client</h3>
             <p>Modern, responsive interfaces with a focus on accessibility and clean design.</p>
             <div class="card-actions justify-between items-center mt-3">
               <div class="flex gap-2 md:flex-col sm:flex-col">
@@ -269,17 +265,17 @@
 
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
-            <h3 class="card-title text-xl">DevOps & Infra</h3>
-            <p>Automation, CI/CD pipelines, and cloud infrastructure to keep projects reliable.</p>
+            <h3 class="card-title text-xl">Dominguez Marble</h3>
+            <p>Simple landing page for a small business. Built with plain HTML, CSS, and JavaScript.</p>
             <div class="card-actions justify-between items-center mt-3">
               <div class="flex gap-2 md:flex-col sm:flex-col">
-                <div class="badge badge-outline">Docker</div>
-                <div class="badge badge-outline">CI/CD</div>
-                <div class="badge badge-outline">Monitoring</div>
+                <div class="badge badge-outline">HTML</div>
+                <div class="badge badge-outline">CSS</div>
+                <div class="badge badge-outline">JavaScript</div>
               </div>
-              <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
+              <a href="https://dominguezmarble.work" aria-label="View project on GitHub"
                 class="hover:bg-accent rounded-3xl">
-                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content"></div>
+                <div class="w-8 h-8 mask-[url(/src/img/internet.svg)] mask-center bg-base-content"></div>
               </a>
             </div>
           </div>
