@@ -3,12 +3,70 @@
      themes: dark --default;
 }
 
+:root {
+    min-height: 100%;
+    background:
+        radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--color-accent) 18%, transparent), transparent 65%),
+        radial-gradient(ellipse 50% 45% at 90% 30%, color-mix(in oklab, var(--color-blue-900) 40%, transparent), transparent 60%),
+        radial-gradient(ellipse 55% 45% at 10% 65%, color-mix(in oklab, var(--color-accent) 10%, transparent), transparent 65%),
+        radial-gradient(ellipse 50% 45% at 85% 100%, color-mix(in oklab, var(--color-blue-900) 45%, transparent), transparent 60%),
+        linear-gradient(180deg, var(--color-gray-900) 0%, var(--color-base-100) 20%, var(--color-base-100) 80%, var(--color-gray-900) 100%);
+}
+
+.hero {
+    @apply relative overflow-hidden;
+}
+
+.hero-glow {
+    @apply absolute inset-0 pointer-events-none;
+    background: radial-gradient(500px circle at 30% 20%, color-mix(in oklab, var(--color-accent) 8%, transparent), transparent 70%);
+}
+
+.hero-watermark {
+    @apply absolute right-0 top-1/2 -translate-y-1/2 font-mono font-extrabold leading-none select-none pointer-events-none;
+    font-size: clamp(8rem, 22vw, 16rem);
+    color: color-mix(in oklab, var(--color-base-content) 4%, transparent);
+}
+
+.hero-eyebrow {
+    @apply text-accent font-semibold tracking-[0.25em] uppercase text-sm;
+}
+
+.hero-title {
+    @apply text-5xl lg:text-7xl font-bold leading-[1.1];
+}
+
+.hero-role {
+    @apply text-xl lg:text-2xl font-medium text-base-content/75;
+}
+
+.hero-tagline {
+    @apply text-lg text-base-content/50 max-w-xl leading-relaxed;
+}
+
+.hero-actions {
+    @apply flex flex-wrap gap-4 mt-2;
+}
+
+.hero-nav {
+    @apply flex flex-wrap gap-3 pb-16;
+}
+
+.hero-nav-link {
+    @apply px-5 py-2.5 rounded-full text-sm font-medium text-base-content/80
+           border border-base-content/30 transition-all duration-200;
+}
+
+.hero-nav-link:hover {
+    @apply text-accent border-accent/35 bg-accent/5;
+}
+
 .section-title {
     @apply text-3xl font-bold mb-5;
 }
 
 .section{
-    @apply w-full p-15;
+    @apply w-full p-15 px-40;
 }
 
 .skill-tile {

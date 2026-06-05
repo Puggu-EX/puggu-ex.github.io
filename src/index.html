@@ -12,7 +12,7 @@
 <body>
   <!-- top bar -->
   <div id="top-bar" class="fixed top-10 left-0 right-0 z-100 hidden lg:block">
-    <div class="mx-auto h-16 px-8 flex items-center justify-between">
+    <div class="mx-auto h-16 px-20 flex items-center justify-between">
       <div class="top-bar-left">
         <a href="#" class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</a>
       </div>
@@ -33,8 +33,8 @@
   </div>
 
   <!-- sidebar -->
-  <div class="fixed left-15 bottom-15 space-y-3 z-100 hidden lg:block">
-    <a class="sidebar-link" href="#main">
+  <div class="fixed left-15 bottom-15 space-y-3 z-100 hidden">
+    <a class="sidebar-link" href="#about">
       <div class="nav-icon home-icon">A</div>
     </a>
     <a class="sidebar-link" href="#skills">
@@ -49,35 +49,39 @@
   </div>
 
   <!--main-->
-  <div class="lg:px-45 [&>*:not(:first-child)]:mb-15 sm:px-0" id="main">
+  <div class="[&>*:not(:first-child)]:mb-15 sm:px-0" id="main">
     <!-- Hero section -->
-    <section class="section flex flex-col w-full min-h-dvh justify-center">
-      <!-- heading -->
-      <div class="flex flex-col items-center">
-        <!-- Picture -->
-        <img alt="" class="rounded-full p-1 border-solid border-4" id="headshot-photograph"
+    <section class="hero section flex flex-col w-full min-h-dvh justify-between" aria-label="Introduction">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-watermark" aria-hidden="true">&lt;/&gt;</div>
+
+      <div class="hero-content flex flex-col justify-center flex-1 gap-5 max-w-3xl">
+        <img alt="" class="hidden rounded-full p-1 border-solid border-4" id="headshot-photograph"
           src="https://placehold.co/300x300" />
-        <h1 class="text-5xl font-bold p-3">Isaac Dominguez</h1>
-        <h2 class="text-3xl font-semibold">
-          Software Developer & IT Specialist
-        </h2>
-        <span class="flex items-center w-full my-5">
-          <span class="h-0.5 flex-1 bg-linear-to-r from-transparent to-gray-600"></span>
-          <span class="h-0.5 flex-1 bg-linear-to-l from-transparent to-gray-600"></span>
-        </span>
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-title">
+          Isaac Dominguez
+        </h1>
+        <p class="hero-role">Software Developer &amp; IT Specialist</p>
+        <p class="hero-tagline">I like to build, secure, and maintain things</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent btn-lg" href="#projects">View Projects</a>
+          <a class="btn btn-outline btn-lg" href="#contact">Get in Touch</a>
+        </div>
       </div>
-      <div class="flex w-full mt-5 gap-15 justify-center" id="nav-tabs">
-        <a class="btn btn-lg btn-accent" href="#about">About</a>
-        <a class="btn btn-lg btn-accent" href="#projects">Projects</a>
-        <a class="btn btn-lg btn-accent" href="#skills">Skills</a>
-        <a class="btn btn-lg btn-accent" href="#contact">Contact</a>
-      </div>
+
+      <nav class="hero-nav" id="nav-tabs" aria-label="Page sections">
+        <a class="hero-nav-link" href="#about">About</a>
+        <a class="hero-nav-link" href="#projects">Projects</a>
+        <a class="hero-nav-link" href="#skills">Skills</a>
+        <a class="hero-nav-link" href="#contact">Contact</a>
+      </nav>
     </section>
 
     <!-- About Section -->
-    <section class="section lg:p-15" id="about">
+    <section class="section lg:p-15 " id="about">
       <div class="title col-start-1 row-start-1 section-title">About Me</div>
-      <div id="about-content" class="sub-section flex lg:flex-row md:flex-col sm:flex-col items-center mt-15 min-w-min">
+      <div id="about-content" class="sub-section flex lg:flex-row md:flex-col sm:flex-col items-center mt-15 min-w-min justify-center">
         <div class="about-description max-w-lg">
           <p class="text-xl">
             I am a recent Computer Science graduate, software developer, and IT specialist. I specialize
@@ -105,7 +109,7 @@
         </div>
         <div class="skill-tile">
           <!-- <div class="skill-icon mask-[url(/src/img/react.svg)]"></div> -->
-          <img class="hover:grayscale-0" src="/src/img/react.svg" alt="react icon">
+          <img class="hover:text-red-400" src="/src/img/react.svg" alt="react icon">
         </div>
         <div class="skill-tile">
           <div class="skill-icon mask-[url(/src/img/tailwind.svg)] bg-blue-300"></div>
@@ -132,7 +136,7 @@
           <div class="skill-icon mask-[url(/src/img/java.svg)] bg-red-500"></div>
         </div>
         <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/cpp.svg)] bg-blue-400"></div>
+          <div class="skill-icon mask-[url(/src/img/cpp.svg)] block-full bg-blue-400"></div>
         </div>
         <div class="skill-tile">
           <div class="skill-icon mask-[url(/src/img/dot_net.svg)] bg-purple-400"></div>
@@ -283,9 +287,19 @@
       </div>
     </section>
 
-    <!-- Contact section (form)-->
+    <!-- Contact section -->
     <section class="section p-15" id="contact">
       <div class="section-title">Contact</div>
+      <div class="mt-15 flex flex-col gap-8 justify-center items-center">
+        <p class="text-xl text-base-content/80 leading-relaxed max-w-2xl">
+          Have a question, project idea, or opportunity? Contact me! I'll get back to you as soon as I can. Feel free to send me an email. In the meantime, you can view my GitHub.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a class="btn btn-accent btn-lg" href="mailto:isaacndj@protonmail.com">Email</a>
+          <a class="btn btn-outline btn-lg" href="https://github.com/Puggu-EX">View GitHub</a>
+        </div>
+      </div>
     </section>
   </div>
 </body>
