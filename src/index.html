@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Isaac Dominguez</title>
-  <!-- <link href="index.css" rel="stylesheet"/> -->
   <link href="output.css" rel="stylesheet" />
 </head>
 
@@ -16,16 +15,19 @@
       <div class="top-bar-left">
         <a href="#" class="font-extrabold text-2xl">&lt;&ThinSpace;/&ThinSpace;&gt;</a>
       </div>
-      <div class="flex gap-5 justify-center">
+      <div class="flex gap-5 justify-center items-center">
         <!-- Resume -->
-        <a class="btn btn-lg btn-accent btn-outline bg-base-100">Resume</a>
+        <a class="btn btn-lg btn-accent btn-outline">Resume</a>
+        <!-- <input type="checkbox" value="light" class="toggle theme-controller" /> -->
         <!-- Other links maybe -->
-        <div class="top-icons hidden">
-          <a class="top-git" href="https://github.com/Puggu-EX">
-            <div class="w-10 h-10 mask-[url(/img/github.svg)] mask-center"></div>
+        <div class="top-icons flex items-center space-x-4">
+          <!-- Github Link -->
+          <a class="top-git rounded-full size-12" href="https://github.com/Puggu-EX">
+            <div class="mask-[url(./img/github.svg)] bg-white size-full mask-center mask-cover hover:bg-accent"></div>
           </a>
-          <a class="top-mail" href="#">
-            <div class="icon mail"></div>
+          <!-- Linkedin Link -->
+          <a href="https://www.linkedin.com/in/isaacdominguez-cs/" class="hover:bg-base-100 rounded-3xl">
+            <div class="w-9 h-9 mask-[url(./img/linkedin.svg)] mask-center bg-base-content hover:bg-accent"></div>
           </a>
         </div>
       </div>
@@ -39,9 +41,6 @@
     </a>
     <a class="sidebar-link" href="#skills">
       <div class="nav-icon projects-icon">S</div>
-    </a>
-    <a class="sidebar-link" href="#about">
-      <div class="nav-icon projects-icon">P</div>
     </a>
     <a class="sidebar-link" href="#projects">
       <div class="nav-icon more-icon">C</div>
@@ -58,22 +57,21 @@
       <div class="hero-content flex flex-col justify-center flex-1 gap-5 max-w-3xl">
         <img alt="" class="hidden rounded-full p-1 border-solid border-4" id="headshot-photograph"
           src="https://placehold.co/300x300" />
-        <p class="hero-eyebrow">Hello, I'm</p>
+        <p class="hero-eyebrow">Welcome! I'm</p>
         <h1 class="hero-title">
           Isaac Dominguez
         </h1>
         <p class="hero-role">Software Developer &amp; IT Specialist</p>
-        <p class="hero-tagline">I like to build, secure, and maintain things</p>
         <div class="hero-actions">
-          <a class="btn btn-accent btn-lg" href="#projects">View Projects</a>
+          <a class="btn btn-accent btn-lg animate-pulse" href="#projects">View Projects</a>
           <a class="btn btn-outline btn-lg" href="#contact">Get in Touch</a>
         </div>
       </div>
 
       <nav class="hero-nav" id="nav-tabs" aria-label="Page sections">
         <a class="hero-nav-link" href="#about">About</a>
-        <a class="hero-nav-link" href="#projects">Projects</a>
         <a class="hero-nav-link" href="#skills">Skills</a>
+        <a class="hero-nav-link" href="#projects">Projects</a>
         <a class="hero-nav-link" href="#contact">Contact</a>
       </nav>
     </section>
@@ -81,65 +79,96 @@
     <!-- About Section -->
     <section class="section lg:p-15 " id="about">
       <div class="title col-start-1 row-start-1 section-title">About Me</div>
-      <div id="about-content" class="sub-section flex lg:flex-row md:flex-col sm:flex-col items-center mt-15 min-w-min justify-center">
-        <div class="about-description max-w-lg">
-          <p class="text-xl">
-            I am a recent Computer Science graduate, software developer, and IT specialist. I specialize
-            in web development and SOHO network magement. I'm always looking for something to learn and apply.
-          </p>
-        </div>
-        <div id="about-photo"
-          class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center m-10">
-          <img src="https://placehold.co/200x200" alt="">
+        <div id="about-content" class="sub-section flex flex-col
+        items-center mt-15 min-w-min justify-end space-x-5 
+        lg:flex-col
+        md:justify-center
+        sm:space-y-10">
+          <div>
+            <div id="envelope-icon" class="bg-gray-200 size-24 mask-center mask-cover mask-[url(./img/personel_badge.svg)]"></div>
+          </div>
+          <div class="about-description max-w-3xl">
+            <p class="text-xl">
+              I am a recent Computer Science graduate from Cal State Long Beach, software developer, and IT specialist.
+              I hold two certifications: the
+              <a class="underline text-info" href="https://cp.certmetrics.com/comptia/en/public/verify/credential/b865ab3f790847eda1b105b8cc5cd94e">CompTIA A+</a>
+              and
+              <a class="underline text-info" href="https://www.credly.com/badges/20ec0e67-360f-456f-a561-75e2a1127714">Microsoft Technology Associate: Networking Fundamentals</a>.
+            <br/><br/>
+              Although my experience is primarily in web development and small office network management,
+              I'm always eager to learn new technologies and take on new challenges.
+            <br/><br/>
+              Currently, I'm seeking opportunities to apply my skills in software development, IT support, or related fields.
+              My ideal role would allow me to grow my skillset and collaborate with a team of passionate professionals.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-      <div class="section-title">Skills & Languages</div>
-      <div class="grid grid-cols-2 grid-rows-8
-         gap-4 max-w-6xl justify-center w-full mx-auto my-20
-        lg:grid-cols-6 lg:grid-rows-2
-        md:grid-cols-4 md:grid-rows-3
-        sm:grid-cols-3 sm:grid-rows-4
-         ">
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/spring.svg)] bg-green-600 "></div>
+      <div class="section-title">Skills & Technologies</div>
+      <div class="flex flex-col space-y-2 mt-15">
+        <!-- Skill Accordion -->
+
+        <!-- Software Development Skill -->
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="checkbox" name="my-accordion-1"/>
+          <div class="collapse-title font-semibold text-xl flex flex-row items-center">
+            <span>Software Development</span>
+            <div class="skill-icon mask-[url(./img/dot_net.svg)] bg-purple-600 size-8 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/qt.svg)] bg-green-600 size-8 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/mysql.svg)] bg-orange-400 size-9 mask-cover ml-4"></div>
+          </div>
+          <div class="collapse-content text-lg">I'm primarily familiar with the .NET framework, specifically to develop GUI applications in WinUI3. 
+            PyQt, a wrap for the QT framework, is my go-to technology for prototyping.
+             <br/><br/>
+            <span class="text-gray-500">
+              I <strong>can</strong> do UI...
+            </span>
+          </div>
         </div>
-        <div class="skill-tile">
-          <!-- <div class="skill-icon mask-[url(/src/img/react.svg)]"></div> -->
-          <img class="hover:text-red-400" src="/src/img/react.svg" alt="react icon">
+
+        <!-- Full-Stack Skill -->
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="checkbox" name="my-accordion-1" />
+          <div class="collapse-title font-semibold text-xl flex flex-row items-center">
+            <span>Full-Stack Web Development</span>
+            <div class="skill-icon mask-[url(./img/react.svg)] bg-blue-300 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/spring.svg)] bg-green-600 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/html5.svg)] bg-orange-600 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/css3.svg)] bg-blue-500 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/javascript.svg)] bg-yellow-300 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/tailwind.svg)] bg-cyan-500 size-8 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/mysql.svg)] bg-orange-400 size-9 mask-cover ml-4"></div>
+          </div>
+          <div class="collapse-content text-lg">Spring Boot for backend and React for frontend. Though as much as I like React,
+             "the closer to vanilla the better" I say. HTML, CSS, JS are my preferred technologies.
+             <br/><br/>
+            <span class="text-gray-500">
+              RESTful API calls only please...
+            </span>
+          </div>
         </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/tailwind.svg)] bg-blue-300"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/mysql.svg)] bg-orange-400"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/linux.svg)] bg-red-500"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/html5.svg)] bg-orange-600 alt=" html5 icon"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/css3.svg)] bg-blue-300"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/javascript.svg)] bg-yellow-500"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/python.svg)] bg-yellow-500"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/java.svg)] bg-red-500"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/cpp.svg)] block-full bg-blue-400"></div>
-        </div>
-        <div class="skill-tile">
-          <div class="skill-icon mask-[url(/src/img/dot_net.svg)] bg-purple-400"></div>
+
+        <!-- Technical Support Skill -->
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="checkbox" name="my-accordion-1" />
+          <div class="collapse-title font-semibold text-xl flex flex-row items-center">
+            <span>Technical Support</span>
+            <div class="skill-icon mask-[url(./img/linux.svg)] bg-orange-700 size-7 mask-cover ml-4"></div>
+            <div class="skill-icon mask-[url(./img/windows.svg)] bg-cyan-500 size-5 mask-cover mask-center ml-4"></div>
+            <div class="skill-icon mask-[url(./img/server.svg)] bg-white size-6.5 mask-cover ml-4"></div>
+          </div>
+          <div class="collapse-content text-lg">
+             I have 7+ years providing technical support both remotely & onsite to users. Software, hardware, Windows, MacOS; it's all the same.
+             Clear communication is my focus. 
+             <br/><br/>
+             <span class="text-gray-500">
+              Please share your screen...
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -159,17 +188,22 @@
                 built with Spring Boot, React, and MySQL.
               </p>
               <div class="flex gap-3">
-                <span class="badge badge-outline">Spring Boot</span>
-                <span class="badge badge-outline">React</span>
-                <span class="badge badge-outline">MySQL</span>
-                <span class="badge badge-outline">Colaberation</span>
+                <div class="badge badge-outline">Spring&nbsp;Boot</div>
+                <div class="badge badge-outline">React</div>
+                <div class="badge badge-outline">MySQL</div>
+                <div class="badge badge-outline">Colaberation</div>
               </div>
             </div>
-            <div class="flex-1 flex justify-center">
-              <div class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center">
-                <span class="opacity-70">Screenshot / mockup</span>
+            
+            <!-- <div class=" md:block lg:block"> -->
+              <div class="flex-1 flex justify-center">
+                <div class="w-full max-w-md aspect-video bg-base-300 rounded-xl flex items-center justify-center">
+                  <!-- <span class="opacity-70">Screenshot / mockup</span> -->
+                   <img class="opacity-80 rounded-md" src="./img/studentnest.png" alt="">
+                </div>
               </div>
-            </div>
+            <!-- </div> -->
+
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-4 right-4 top-1/2">
             <a href="#project-slide-3" class="btn btn-circle hover:bg-accent">❮</a>
@@ -229,21 +263,20 @@
       </div>
 
       <!-- Project tiles under carousel -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6">
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
             <h3 class="card-title text-xl">ISTS Backend</h3>
             <p>Backend code for ISTS; my ticketing system. Built with Spring Boot.</p>
             <div class="card-actions justify-between items-center mt-3">
               <div class="flex gap-2 md:flex-col sm:flex-col">
-                <div class="badge badge-outline">Spring Boot</div>
+                <div class="badge badge-outline">Spring&nbsp;Boot</div>
                 <div class="badge badge-outline">Java</div>
                 <div class="badge badge-outline">Jakarta</div>
                 <div class="badge badge-outline">Maven</div>
               </div>
-              <a href="https://github.com/Puggu-EX/ISTS-Backend" aria-label="View project on GitHub"
-                class="hover:bg-accent rounded-3xl">
-                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content">testing</div>
+              <a href="https://github.com/Puggu-EX/ISTS-Backend" class="hover:bg-accent rounded-3xl">
+                <div class="w-9 h-9 mask-[url(./img/github.svg)] mask-center bg-base-content"></div>
               </a>
             </div>
           </div>
@@ -251,7 +284,7 @@
 
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
-            <h3 class="card-title text-xl">ISTS Client</h3>
+            <h3 class="card-title text-xl">ISTS Client WinUI</h3>
             <p>Modern, responsive interfaces with a focus on accessibility and clean design.</p>
             <div class="card-actions justify-between items-center mt-3">
               <div class="flex gap-2 md:flex-col sm:flex-col">
@@ -261,7 +294,7 @@
               </div>
               <a href="https://github.com/Puggu-EX" aria-label="View project on GitHub"
                 class="hover:bg-accent rounded-3xl">
-                <div class="w-9 h-9 mask-[url(/src/img/github.svg)] mask-center bg-base-content"></div>
+                <div class="w-9 h-9 mask-[url(./img/github.svg)] mask-center bg-base-content"></div>
               </a>
             </div>
           </div>
@@ -279,11 +312,12 @@
               </div>
               <a href="https://dominguezmarble.work" aria-label="View project on GitHub"
                 class="hover:bg-accent rounded-3xl">
-                <div class="w-8 h-8 mask-[url(/src/img/internet.svg)] mask-center bg-base-content"></div>
+                <div class="w-8 h-8 mask-[url(./img/visit.svg)] mask-center mask-cover bg-base-content"></div>
               </a>
             </div>
           </div>
         </div>
+        <a href="https://github.com/Puggu-EX" class="btn btn-soft btn-lg col-start-2">View More</a>
       </div>
     </section>
 
@@ -291,16 +325,36 @@
     <section class="section p-15" id="contact">
       <div class="section-title">Contact</div>
       <div class="mt-15 flex flex-col gap-8 justify-center items-center">
+        <!-- Email icon -->
+        <div id="envelope-icon" class="bg-gray-200 w-20 h-20 mask-center mask-cover
+          mask-[url(./img/email.svg)] animate-pulse"></div>
         <p class="text-xl text-base-content/80 leading-relaxed max-w-2xl">
-          Have a question, project idea, or opportunity? Contact me! I'll get back to you as soon as I can. Feel free to send me an email. In the meantime, you can view my GitHub.
+          Have a question, project idea, or opportunity? 
+          Contact me! 
+          I'll get back to you as soon as I can. 
+          Feel free to send me an email. 
+          <br/><br/>
+          In the meantime, you can view my GitHub. Thanks for visiting!
         </p>
-
         <div class="flex flex-wrap gap-4">
-          <a class="btn btn-accent btn-lg" href="mailto:isaacndj@protonmail.com">Email</a>
-          <a class="btn btn-outline btn-lg" href="https://github.com/Puggu-EX">View GitHub</a>
+          <a class="btn btn-soft  btn-accent btn-lg" href="mailto:isaacndj@protonmail.com">Email</a>
+          <a class="btn btn-soft btn-lg" href="https://github.com/Puggu-EX">View GitHub</a>
         </div>
       </div>
     </section>
+  <footer class="footer mt-20 py-8 bg-base-200 border-t border-base-300 text-base-content/70 text-center flex flex-col items-center">
+    <nav class="flex flex-wrap justify-center gap-6 mb-4">
+      <a href="#main" class="hover:text-accent transition-colors">Home</a>
+      <a href="#about" class="hover:text-accent transition-colors">About</a>
+      <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+      <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+      <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+    </nav>
+    <p class="text-sm text-gray-500 mt-4">
+      No personal information is collected or stored on this site. Your privacy is respected.
+    </p>
+    <span class="text-xs text-gray-400 mt-2">Isaac Dominguez</span>
+  </footer>
   </div>
 </body>
 

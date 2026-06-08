@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui"{
-     themes: dark --default;
+     themes: dark --default, light;
 }
 
 :root {
@@ -19,7 +19,7 @@
 
 .hero-glow {
     @apply absolute inset-0 pointer-events-none;
-    background: radial-gradient(500px circle at 30% 20%, color-mix(in oklab, var(--color-accent) 8%, transparent), transparent 70%);
+    /* background: radial-gradient(500px circle at 30% 20%, color-mix(in oklab, var(--color-accent) 8%, transparent), transparent 70%); */
 }
 
 .hero-watermark {
