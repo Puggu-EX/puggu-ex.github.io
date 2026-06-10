@@ -5,12 +5,11 @@
 
 :root {
     min-height: 100%;
-    background:
-        radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--color-accent) 18%, transparent), transparent 65%),
-        radial-gradient(ellipse 50% 45% at 90% 30%, color-mix(in oklab, var(--color-blue-900) 40%, transparent), transparent 60%),
-        radial-gradient(ellipse 55% 45% at 10% 65%, color-mix(in oklab, var(--color-accent) 10%, transparent), transparent 65%),
-        radial-gradient(ellipse 50% 45% at 85% 100%, color-mix(in oklab, var(--color-blue-900) 45%, transparent), transparent 60%),
-        linear-gradient(180deg, var(--color-gray-900) 0%, var(--color-base-100) 20%, var(--color-base-100) 80%, var(--color-gray-900) 100%);
+    background: #121212;
+        /* radial-gradient(ellipse 50% 45% at 90% 30%, color-mix(in oklab, var(--color-blue-900) 40%, transparent), transparent 60%), */
+        /* radial-gradient(ellipse 55% 45% at 10% 65%, color-mix(in oklab, var(--color-accent) 10%, transparent), transparent 65%), */
+        /* radial-gradient(ellipse 50% 45% at 85% 100%, color-mix(in oklab, var(--color-blue-900) 45%, transparent), transparent 60%), */
+        /* linear-gradient(180deg, var(--color-gray-900) 0%, var(--color-base-100) 20%, var(--color-base-100) 80%, var(--color-gray-900) 100%); */
 }
 
 .hero {
@@ -91,4 +90,60 @@
 
 .skill-tile img{
     @apply w-2/3 h-2/3;
+}
+
+@keyframes shakeX {
+  from,
+  55%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  20%,
+  30%,
+  40%,
+  50%{
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  5%,
+  15%,
+  25%,
+  35%,
+  45%{
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+@keyframes slide-weave {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25%{
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  75%{
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+.shakeX {
+  /* animation: .5s shakeX 5s linear infinite; */
+  animation-name: shakeX;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slide-weave {
+  /* animation: .5s shakeX 5s linear infinite; */
+  animation-name: slide-weave;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
