@@ -68,16 +68,18 @@
         </div>
       </div>
 
-      <nav class="hero-nav" id="nav-tabs" aria-label="Page sections">
-        <a class="hero-nav-link" href="#about">About</a>
-        <a class="hero-nav-link" href="#skills">Skills</a>
-        <a class="hero-nav-link" href="#projects">Projects</a>
-        <a class="hero-nav-link" href="#contact">Contact</a>
-      </nav>
+      <div class="hidden md:block">
+        <nav class="hero-nav" id="nav-tabs" aria-label="Page sections">
+          <a class="hero-nav-link" href="#about">About</a>
+          <a class="hero-nav-link" href="#skills">Skills</a>
+          <a class="hero-nav-link" href="#projects">Projects</a>
+          <a class="hero-nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section class="section lg:p-15 " id="about">
+    <section class="section" id="about">
       <div class="title col-start-1 row-start-1 section-title">About Me</div>
         <div id="about-content" class="sub-section flex flex-col
         items-center mt-15 min-w-min justify-end space-x-5 
@@ -280,7 +282,10 @@
       </div>
 
       <!-- Project tiles under carousel -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6">
+      <div class="mt-10 
+        lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-6
+        flex-col space-y-3 justify-center">
+
         <div class="card bg-base-200 shadow-xl">
           <div class="card-body">
             <h3 class="card-title text-xl">ISTS Backend</h3>
@@ -334,7 +339,9 @@
             </div>
           </div>
         </div>
-        <a href="https://github.com/Puggu-EX" class="btn btn-soft btn-lg col-start-2">View More</a>
+
+        <a href="https://github.com/Puggu-EX" class="btn btn-soft btn-lg lg:col-start-2">View More</a>
+
       </div>
     </section>
 
